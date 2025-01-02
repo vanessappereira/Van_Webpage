@@ -3,56 +3,116 @@
 
 <head>
     <meta charset="utf-8">
-    <link rel="icon" href="images/music-notes-simple.svg">
+    <link rel="icon" href="icons/butterfly.svg" type="image/svg+xml">
     <title>Homepage</title>
     <link rel="stylesheet" href="css/generalStyles.css">
     <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
 </head>
 
 <body>
-    <!-- Header Centered -->
-    <h1 id="title">Homepage</h1>
+    <!-- Horizontal Navbar -->
+    <header>
+        <nav>
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About Me</a></li>
+                <li><a href="#">Projects</a></li>
+                <li>
+                    <a href="mailto:v.pereira.work@gmail.com" class="contact"
+                        aria-label="Contact Vanessa Pereira via email">Contact Me</a>
+                </li>
+                <li class="navbar-right">
+                    <a href="https://github.com/vanessappereira" class="github-btn"
+                        aria-label="Visit Vanessa Pereira's GitHub profile" target="_blank" rel="noopener noreferrer">
+                        <img src="icons/github-logo.svg" alt="GitHub Logo" class="github-logo">
+                        <p>Vanessa Pereira</p>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
-    <div class="content"> <!-- flexbox container -->
-        <!-- Main Content -->
-        <div class="container">
-            <div class="left-side">
-                <div class="image-placeholder">Image Placeholder</div>
-                <div class="sidebar icon">
-                    <!-- <img src="images/weather/sun.svg" alt="Sun Icon"> 
-                    <img src="icons/home.svg" alt="Home Icon">-->
-                    <img src="icons/mailbox.svg" alt="Email Icon">
+    <main>
+        <!-- Header Centered -->
+        <h1 id="title">Homepage</h1>
+
+        <div class="content">
+            <!-- Main Content -->
+            <div class="container">
+                <div class="left-side">
+                    <div class="image-placeholder">
+                        <img src="images/profile.png" alt="Vanessa" class="image" loading="lazy">
+                    </div>
                 </div>
-                <div class="name">Vanessa Pereira</div>
-            </div>
-            <div class="right-side">
-                <button class="button">About Me</button>
-                <button class="button">CV</button>
-                <button class="button">Taco Town Recipes</button>
-                <button class="button">
-                    <a href="/drum_page/index.html" aria-label="Drum Kit Project">Drum Kit Project</a></button>
-                <button class="button">Band Generator Project</button>
-                <button class="button">Simon Says Game</button>
-                <button class="button">Other Projects</button>
-            </div>
-        </div>
-    </div>
+                <div class="right-side">
+                    <button class="cssbuttons-io">
+                        <a href="/drum_page/index.html" aria-label="Drum Kit Project">
+                            <span>
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 0h24v24H0z" fill="none"></path>
+                                    <path
+                                        d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"
+                                        fill="currentColor"></path>
+                                </svg> Drum Kit Project
+                            </span>
+                        </a>
+                    </button>
 
-    <!-- Footer Centered -->
-    <footer>
-        <div class="footer-content">
-            <a href="https://github.com/vanessappereira" class="github-btn"
-                aria-label="Visit Vanessa Pereira's GitHub profile">
-                <img src="icons/github-logo.svg" alt="GitHub Logo" class="github-logo">
-            </a>
-            <p class="footer-text">Created by Vanessa Pereira</p>
+                    <button class="cssbuttons-io">
+                        <a href="#" aria-label="Taco Town Recipes">
+                            <span>
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 0h24v24H0z" fill="none"></path>
+                                    <path
+                                        d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"
+                                        fill="currentColor"></path>
+                                </svg> Taco Town Recipes
+                            </span>
+                        </a>
+                    </button>
+                    <button class="cssbuttons-io">
+                        <a href="#" aria-label="Band Generator Project">
+                            <span>
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 0h24v24H0z" fill="none"></path>
+                                    <path
+                                        d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"
+                                        fill="currentColor"></path>
+                                </svg> Band Generator Project
+                            </span>
+                        </a>
+                    </button>
+                    <button class="cssbuttons-io">
+                        <a href="#" aria-label="Simon Says Game">
+                            <span>
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 0h24v24H0z" fill="none"></path>
+                                    <path
+                                        d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"
+                                        fill="currentColor"></path>
+                                </svg> Simon Says Game
+                            </span>
+                        </a>
+                    </button>
+                    <button class="cssbuttons-io">
+                        <a href="#" aria-label="Other Projects">
+                            <span>
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 0h24v24H0z" fill="none"></path>
+                                    <path
+                                        d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"
+                                        fill="currentColor"></path>
+                                </svg> Other Projects
+                            </span>
+                        </a>
+                    </button>
+                </div>
+            </div>
         </div>
-        <!-- <div class="footer-content">
-            <a href="../index.html" class="return-btn" aria-label="Return to Vanessa's Homepage">
-                <img src="icons/home.svg" alt="Home Icon" class="home-icon">
-            </a>
-            <p class="footer-text">Return to Homepage</p>
-        </div> -->
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Vanessa Pereira</p>
     </footer>
 </body>
 

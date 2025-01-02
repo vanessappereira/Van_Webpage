@@ -1,10 +1,10 @@
 :root {
-    --pink-color: #f8a5c2;
-    --purple-color: #6a4c93;
     --background-image: url("../images/background.png");
     --font-arvo: "Arvo", serif;
     --primary-color: #3cc5f3;
     --highlight-color: #DA0463;
+    --secondary-color: #A06AC6;
+    --button-color: #FCD1D8;
 }
 
 * {
@@ -55,6 +55,7 @@ h1 {
     align-items: center;
     gap: 20px;
     width: 40%;
+    height: auto;
 }
 
 .image-placeholder {
@@ -65,16 +66,14 @@ h1 {
     align-items: center;
     font-size: 24px;
     color: #333;
-    height: 280px;
     width: 100%;
+    padding: 10px;
 }
 
-.sidebar {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    justify-content: center;
-    align-items: center;
+.image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
 
 .right-side {
@@ -84,48 +83,122 @@ h1 {
     width: 50%;
 }
 
-.button {
-    background-color: #6a4c93;
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* Center vertically */
+}
+
+.navbar li {
+    float: left;
+    display: flex;
+    align-items: center;
+    /* Center vertically */
+    justify-content: center;
+    /* Center horizontally */
+}
+
+.navbar li a {
+    display: block;
     color: white;
-    border: none;
-    padding: 15px;
-    border-radius: 10px;
     text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar li a:hover {
+    background-color: #111;
+}
+
+.navbar-right {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Center horizontally */
+}
+
+.github-btn {
+    display: inline-flex;
+    align-items: center;
+}
+
+.github-logo {
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+}
+
+/* From Uiverse.io by adamgiebl */
+.cssbuttons-io {
+    position: relative;
+    font-family: inherit;
+    font-weight: 500;
     font-size: 18px;
+    letter-spacing: 0.05em;
+    border-radius: 0.8em;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    border: none;
+    background: linear-gradient(to right, #8e2de2, #4a00e0);
+    color: ghostwhite;
+    overflow: hidden;
+    height: 100px;
 }
 
-.button:hover {
-    background-color: #f67280;
+.cssbuttons-io:nth-child(odd) {
+    background: linear-gradient(to right, #8e2de2, #4a00e0);
 }
 
-.name {
-    background-color: #f8a5c2;
-    border-radius: 10px;
-    padding: 15px;
-    text-align: center;
-    font-size: 24px;
-    color: #333;
-    width: 100%;
+.cssbuttons-io:nth-child(even) {
+    background: linear-gradient(to right, #4a00e0, #8e2de2);
+}
+
+.cssbuttons-io svg {
+    width: 1.2em;
+    height: 1.2em;
+    margin-right: 0.5em;
+}
+
+.cssbuttons-io span {
+    position: relative;
+    z-index: 10;
+    transition: color 0.4s;
+    display: inline-flex;
+    align-items: center;
+    padding: 0.8em 1.2em 0.8em 1.05em;
+}
+
+.cssbuttons-io:hover span {
+    color: #ffffff;
+}
+
+.cssbuttons-io::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -10%;
+    width: 120%;
+    height: 100%;
+    background: var(--button-color);
+    transform: skew(30deg);
+    transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+    z-index: 0;
+}
+
+.cssbuttons-io:hover::before {
+    transform: translate3d(100%, 0, 0);
+}
+
+.cssbuttons-io:active {
+    transform: scale(0.95);
 }
 
 footer {
-    color: var(--highlight-color);
-    font-family: sans-serif;
-    font-size: 1.5rem;
-    margin-top: 10%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-self: center;
-}
-
-.footer-content {
-    margin: 0 10px;
-}
-
-.footer-content img {
-    width: 40px;
-    height: 40px;
+    padding-top: 25px;
 }
