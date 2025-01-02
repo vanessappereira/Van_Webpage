@@ -86,7 +86,7 @@ h1 {
 .navbar {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 20px;
     overflow: hidden;
     background-color: var(--secondary-color);
     display: flex;
@@ -201,4 +201,42 @@ h1 {
 
 footer {
     padding-top: 25px;
+}
+
+.title {
+    padding-bottom: 1.25rem;
+    /* 20px converted to rem for better scalability */
+}
+
+.title h1 {
+    position: relative;
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    width: max-content;
+    text-align: center;
+    margin: auto;
+    white-space: nowrap;
+    border: 0.125rem solid #222;
+    padding: 0.3125rem 0.6875rem 0.1875rem 0.6875rem;
+}
+
+.title h1:before,
+.title h1:after {
+    background-color: #c50000;
+    position: absolute;
+    content: '';
+    height: 0.4375rem;
+    width: 0.4375rem;
+    border-radius: 50%;
+    bottom: 0.75rem;
+}
+
+.title h1:before {
+    left: -1.25rem;
+}
+
+.title h1:after {
+    right: -1.25rem;
 }
