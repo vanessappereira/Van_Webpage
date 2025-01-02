@@ -1,0 +1,78 @@
+:root{
+    --pink-color: #f8a5c2;
+    --purple-color: #6a4c93;
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 20px;
+    width: 80%;
+    max-width: 1200px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    margin: auto;
+}
+.content{
+    display: flex;
+    flex-direction: row ;
+}
+
+.image-placeholder {
+    grid-column: 1 / 3;
+    background-color: #d3f8e2;
+    border-radius: 10px;
+    height: 280px;
+    /* Adjusted height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    /* Adjusted to fit within the grid */
+}
+
+.button {
+    background-color: #6a4c93;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.button:nth-child(2) {
+    background-color: #f67280;
+}
+
+.button:nth-child(4) {
+    background-color: #f67280;
+}
+
+.name {
+    grid-column: 1 / 3;
+    background-color: #f8a5c2;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+}
+
+.icon {
+    left: 20px;
+    top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.icon img {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}

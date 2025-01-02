@@ -5,41 +5,52 @@
     <meta charset="utf-8">
     <link rel="icon" href="images/music-notes-simple.svg">
     <title>Homepage</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/generalStyles.css">
     <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
 </head>
 
 <body>
+    <!-- Header Centered -->
+    <h1 id="title">Homepage</h1>
 
-    <h1 id="title">Drum 🥁 Kit</h1>
-    <div class="set">
-        <button class="w drum">w</button>
-        <button class="a drum">a</button>
-        <button class="s drum">s</button>
-        <button class="d drum">d</button>
-        <button class="j drum">j</button>
-        <button class="k drum">k</button>
-        <button class="l drum">l</button>
+    <div class="content"> <!-- flexbox container -->
+        <!-- Main Content -->
+        <div class="container">
+            <div class="left-side">
+                <div class="image-placeholder">Image Placeholder</div>
+                <div class="sidebar icon">
+                    <img src="images/weather/sun.svg" alt="Sun Icon">
+                    <img src="icons/home.svg" alt="Home Icon">
+                    <img src="icons/mailbox.svg" alt="Email Icon">
+                </div>
+                <div class="name">Vanessa Pereira</div>
+            </div>
+            <div class="right-side">
+                <button class="button">About Me</button>
+                <button class="button">CV</button>
+                <button class="button">Taco Town Recipes</button>
+                <button class="button">
+                    <a href="/drum_page/index.html" aria-label="Drum Kit Project">Drum Kit Project</a></button>
+                <button class="button">Band Generator Project</button>
+                <button class="button">Simon Says Game</button>
+            </div>
+        </div>
     </div>
 
-
-    <script src="js/index.js" charset="utf-8"></script>
-
+    <!-- Footer Centered -->
     <footer>
-
         <div class="footer-content">
-            <!-- GitHub Button with Accessibility Improvements -->
             <a href="https://github.com/vanessappereira" class="github-btn"
                 aria-label="Visit Vanessa Pereira's GitHub profile">
-                <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" fill="#000000" viewBox="0 0 256 256">
-                    <path
-                        d="M212.62,75.17A63.7,63.7,0,0,0,206.39,26,12,12,0,0,0,196,20a63.71,63.71,0,0,0-50,24H126A63.71,63.71,0,0,0,76,20a12,12,0,0,0-10.39,6,63.7,63.7,0,0,0-6.23,49.17A61.5,61.5,0,0,0,52,104v8a60.1,60.1,0,0,0,45.76,58.28A43.66,43.66,0,0,0,92,192v4H76a20,20,0,0,1-20-20,44.05,44.05,0,0,0-44-44,12,12,0,0,0,0,24,20,20,0,0,1,20,20,44.05,44.05,0,0,0,44,44H92v12a12,12,0,0,0,24,0V192a20,20,0,0,1,40,0v40a12,12,0,0,0,24,0V192a43.66,43.66,0,0,0-5.76-21.72A60.1,60.1,0,0,0,220,112v-8A61.5,61.5,0,0,0,212.62,75.17ZM196,112a36,36,0,0,1-36,36H112a36,36,0,0,1-36-36v-8a37.87,37.87,0,0,1,6.13-20.12,11.65,11.65,0,0,0,1.58-11.49,39.9,39.9,0,0,1-.4-27.72,39.87,39.87,0,0,1,26.41,17.8A12,12,0,0,0,119.82,68h32.35a12,12,0,0,0,10.11-5.53,39.84,39.84,0,0,1,26.41-17.8,39.9,39.9,0,0,1-.4,27.72,12,12,0,0,0,1.61,11.53A37.85,37.85,0,0,1,196,104Z">
-                    </path>
-                </svg>
+                <img src="icons/github-logo.svg" alt="GitHub Logo" class="github-logo">
             </a>
-
-            <!-- Author Information -->
             <p class="footer-text">Created by Vanessa Pereira</p>
+        </div>
+        <div class="footer-content">
+            <a href="../index.html" class="return-btn" aria-label="Return to Vanessa's Homepage">
+                <img src="icons/home.svg" alt="Home Icon" class="home-icon">
+            </a>
+            <p class="footer-text">Return to Homepage</p>
         </div>
     </footer>
 </body>
