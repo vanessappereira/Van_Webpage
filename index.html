@@ -5,7 +5,8 @@
     <meta charset="utf-8">
     <link rel="icon" href="icons/butterfly.svg" type="image/svg+xml">
     <title>Homepage</title>
-    <link rel="stylesheet" href="css/generalStyles.css">
+    <link rel="stylesheet" href="css/templateStyles.css">
+    <link rel="stylesheet" href="css/indexStyles.css">
     <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
 </head>
 
@@ -16,7 +17,6 @@
             <ul class="navbar">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="#">About Me</a></li>
-                <li><a href="#">Projects</a></li>
                 <li>
                     <a href="mailto:v.pereira.work@gmail.com" class="contact"
                         aria-label="Contact Vanessa Pereira via email">Contact Me</a>
@@ -38,79 +38,60 @@
             <h1>Vanessa Homepage</h1>
         </div>
 
-        <div class="content">
-            <!-- Main Content -->
-            <div class="container">
-                <div class="left-side">
-                    <div class="image-placeholder">
-                        <img src="images/profile.png" alt="Vanessa" class="image" loading="lazy">
-                    </div>
-                </div>
-                <div class="right-side">
-                    <button class="cssbuttons-io">
-                        <a href="/drum_page/index.html" aria-label="Drum Kit Project">
-                            <span>
-                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M0 0h24v24H0z" fill="none"></path>
-                                    <path
-                                        d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"
-                                        fill="currentColor"></path>
-                                </svg> Drum Kit Project
-                            </span>
-                        </a>
-                    </button>
 
-                    <button class="cssbuttons-io">
-                        <a href="#" aria-label="Taco Town Recipes">
-                            <span>
-                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M0 0h24v24H0z" fill="none"></path>
-                                    <path
-                                        d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"
-                                        fill="currentColor"></path>
-                                </svg> Taco Town Recipes
-                            </span>
-                        </a>
-                    </button>
-                    <button class="cssbuttons-io">
-                        <a href="#" aria-label="Band Generator Project">
-                            <span>
-                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M0 0h24v24H0z" fill="none"></path>
-                                    <path
-                                        d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"
-                                        fill="currentColor"></path>
-                                </svg> Band Generator Project
-                            </span>
-                        </a>
-                    </button>
-                    <button class="cssbuttons-io">
-                        <a href="#" aria-label="Simon Says Game">
-                            <span>
-                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M0 0h24v24H0z" fill="none"></path>
-                                    <path
-                                        d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"
-                                        fill="currentColor"></path>
-                                </svg> Simon Says Game
-                            </span>
-                        </a>
-                    </button>
-                    <button class="cssbuttons-io">
-                        <a href="#" aria-label="Other Projects">
-                            <span>
-                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M0 0h24v24H0z" fill="none"></path>
-                                    <path
-                                        d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"
-                                        fill="currentColor"></path>
-                                </svg> Other Projects
-                            </span>
-                        </a>
-                    </button>
+        <!-- Main Content -->
+        <div class="container">
+            <div class="left-side">
+                <div class="image-placeholder">
+                    <img src="images/profile.png" alt="Vanessa" class="image" loading="lazy">
                 </div>
             </div>
+            <div class="right-side">
+                <button class="cssbuttons-io">
+                    <a href="/drum_page/index.html" aria-label="Drum Kit Project">
+                        <span>
+                            <img src="/icons/programming.svg" class="button-icon" alt="Drum Kit Icon" width="24"
+                                height="24"> Drum Kit
+                            Project
+                        </span>
+                    </a>
+                </button>
+
+                <button class="cssbuttons-io">
+                    <a href="#" aria-label="Taco Town Recipes">
+                        <span>
+                            <img src="/icons/programming.svg" class="button-icon" alt="Drum Kit Icon" width="24"
+                                height="24">Taco Town Recipes
+                        </span>
+                    </a>
+                </button>
+                <button class="cssbuttons-io">
+                    <a href="#" aria-label="Band Generator Project">
+                        <span>
+                            <img src="/icons/programming.svg" class="button-icon" alt="Drum Kit Icon" width="24"
+                                height="24"> Band Generator Project
+                        </span>
+                    </a>
+                </button>
+                <button class="cssbuttons-io">
+                    <a href="#" aria-label="Simon Says Game">
+                        <span>
+                            <img src="/icons/programming.svg" class="button-icon" alt="Drum Kit Icon" width="24"
+                                height="24"> Simon Says Game
+                        </span>
+                    </a>
+                </button>
+                <button class="cssbuttons-io">
+                    <a href="#" aria-label="Other Projects">
+                        <span>
+                            <img src="/icons/programming.svg" class="button-icon" alt="Drum Kit Icon" width="24"
+                                height="24"> Other Projects
+                        </span>
+                    </a>
+                </button>
+            </div>
         </div>
+
     </main>
 
     <footer>
