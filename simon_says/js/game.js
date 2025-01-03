@@ -1,20 +1,12 @@
 
-// Create an array called buttonColours and set to hold the sequence "red", "blue", "green", "yellow".
 var buttonColours = ["red", "blue", "green", "yellow"];
-
-// Create an empty array called gamePattern.
 var gamePattern = [];
-
-// Create an array called gamePattern and set to an empty array.
 var userClickedPattern = [];
-
-// Create a var called level and start at level 0
 var started = false;
 var level = 0;
 
 $(document).keypress(function () {
     if (!started) {
-        // The h1 title starts out saying "Press A Key to Start", when the game has started, change this to say "Level 0".
         $("#level-title").text("Level " + level);
         nextSequence();
         started = true;

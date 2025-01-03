@@ -1,4 +1,3 @@
-// Click and main function
 for (var i = 0; i < document.querySelectorAll(".drum").length; i++) {
     document.querySelectorAll(".drum")[i].addEventListener("click", function () {
         var buttonInnerHTML = this.innerHTML;
@@ -6,12 +5,12 @@ for (var i = 0; i < document.querySelectorAll(".drum").length; i++) {
         buttonAnimation(buttonInnerHTML);
     });
 }
-//Detect Keyboard press
+
 document.addEventListener("keydown", function (event) {
     makeSound(event.key);
     buttonAnimation(event.key);
 });
-//Make sound corresponding to the image
+
 function makeSound(key) {
     switch (key) {
         case "w":
