@@ -3,44 +3,99 @@
 
 <head>
     <meta charset="utf-8">
-    <link rel="icon" href="images/music-notes-simple.svg">
+    <link rel="icon" href="icons/butterfly.svg" type="image/svg+xml">
     <title>Homepage</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/templateStyles.css">
+    <link rel="stylesheet" href="css/indexStyles.css">
     <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
 </head>
 
 <body>
+    <!-- Horizontal Navbar -->
+    <header>
+        <nav>
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About Me</a></li>
+                <li>
+                    <a href="mailto:v.pereira.work@gmail.com" class="contact"
+                        aria-label="Contact Vanessa Pereira via email">Contact Me</a>
+                </li>
+                <li class="navbar-right">
+                    <a href="https://github.com/vanessappereira" class="github-btn"
+                        aria-label="Visit Vanessa Pereira's GitHub profile" target="_blank" rel="noopener noreferrer">
+                        <img src="icons/github-logo.svg" alt="GitHub Logo" class="github-logo">
+                        <p>Vanessa Pereira</p>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
-    <h1 id="title">Drum 🥁 Kit</h1>
-    <div class="set">
-        <button class="w drum">w</button>
-        <button class="a drum">a</button>
-        <button class="s drum">s</button>
-        <button class="d drum">d</button>
-        <button class="j drum">j</button>
-        <button class="k drum">k</button>
-        <button class="l drum">l</button>
-    </div>
+    <main>
+        <!-- Header Centered -->
+        <div class="title">
+            <h1>Vanessa Homepage</h1>
+        </div>
 
 
-    <script src="js/index.js" charset="utf-8"></script>
+        <!-- Main Content -->
+        <div class="container">
+            <div class="left-side">
+                <div class="image-placeholder">
+                    <img src="images/profile.png" alt="Vanessa" class="image" loading="lazy">
+                </div>
+            </div>
+            <div class="right-side">
+                <button class="cssbuttons-io">
+                    <a href="/drum_page/index.html" aria-label="Drum Kit Project">
+                        <span>
+                            <img src="/icons/programming.svg" class="button-icon" alt="Drum Kit Icon" width="24"
+                                height="24"> Drum Kit
+                            Project
+                        </span>
+                    </a>
+                </button>
+
+                <button class="cssbuttons-io">
+                    <a href="#" aria-label="Taco Town Recipes">
+                        <span>
+                            <img src="/icons/programming.svg" class="button-icon" alt="Drum Kit Icon" width="24"
+                                height="24">Taco Town Recipes
+                        </span>
+                    </a>
+                </button>
+                <button class="cssbuttons-io">
+                    <a href="#" aria-label="Band Generator Project">
+                        <span>
+                            <img src="/icons/programming.svg" class="button-icon" alt="Drum Kit Icon" width="24"
+                                height="24"> Band Generator Project
+                        </span>
+                    </a>
+                </button>
+                <button class="cssbuttons-io">
+                    <a href="#" aria-label="Simon Says Game">
+                        <span>
+                            <img src="/icons/programming.svg" class="button-icon" alt="Drum Kit Icon" width="24"
+                                height="24"> Simon Says Game
+                        </span>
+                    </a>
+                </button>
+                <button class="cssbuttons-io">
+                    <a href="#" aria-label="Other Projects">
+                        <span>
+                            <img src="/icons/programming.svg" class="button-icon" alt="Drum Kit Icon" width="24"
+                                height="24"> Other Projects
+                        </span>
+                    </a>
+                </button>
+            </div>
+        </div>
+
+    </main>
 
     <footer>
-
-        <div class="footer-content">
-            <!-- GitHub Button with Accessibility Improvements -->
-            <a href="https://github.com/vanessappereira" class="github-btn"
-                aria-label="Visit Vanessa Pereira's GitHub profile">
-                <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" fill="#000000" viewBox="0 0 256 256">
-                    <path
-                        d="M212.62,75.17A63.7,63.7,0,0,0,206.39,26,12,12,0,0,0,196,20a63.71,63.71,0,0,0-50,24H126A63.71,63.71,0,0,0,76,20a12,12,0,0,0-10.39,6,63.7,63.7,0,0,0-6.23,49.17A61.5,61.5,0,0,0,52,104v8a60.1,60.1,0,0,0,45.76,58.28A43.66,43.66,0,0,0,92,192v4H76a20,20,0,0,1-20-20,44.05,44.05,0,0,0-44-44,12,12,0,0,0,0,24,20,20,0,0,1,20,20,44.05,44.05,0,0,0,44,44H92v12a12,12,0,0,0,24,0V192a20,20,0,0,1,40,0v40a12,12,0,0,0,24,0V192a43.66,43.66,0,0,0-5.76-21.72A60.1,60.1,0,0,0,220,112v-8A61.5,61.5,0,0,0,212.62,75.17ZM196,112a36,36,0,0,1-36,36H112a36,36,0,0,1-36-36v-8a37.87,37.87,0,0,1,6.13-20.12,11.65,11.65,0,0,0,1.58-11.49,39.9,39.9,0,0,1-.4-27.72,39.87,39.87,0,0,1,26.41,17.8A12,12,0,0,0,119.82,68h32.35a12,12,0,0,0,10.11-5.53,39.84,39.84,0,0,1,26.41-17.8,39.9,39.9,0,0,1-.4,27.72,12,12,0,0,0,1.61,11.53A37.85,37.85,0,0,1,196,104Z">
-                    </path>
-                </svg>
-            </a>
-
-            <!-- Author Information -->
-            <p class="footer-text">Created by Vanessa Pereira</p>
-        </div>
+        <p>&copy; 2025 Vanessa Pereira</p>
     </footer>
 </body>
 

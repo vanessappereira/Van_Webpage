@@ -1,19 +1,48 @@
-body {
-  text-align: center;
-  background-color: #283149;
-}
-
-h1 {
+.drum {
+  outline: none;
+  border: 10px solid var(--border-color);
   font-size: 5rem;
-  color: #DBEDF3;
-  font-family: "Arvo", cursive;
-  text-shadow: 3px 0 #DA0463;
-
+  font-family: var(--font-arvo);
+  line-height: 2;
+  font-weight: 900;
+  color: var(--highlight-color);
+  text-shadow: 3px 0 var(--primary-color);
+  border-radius: 15px;
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  margin: 10px;
+  background-color: white;
 }
 
-footer {
-  color: #DBEDF3;
-  font-family: sans-serif;
+.set {
+  margin: 10% auto;
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+.pressed {
+  box-shadow: 0 3px 4px 0 var(--primary-color);
+  opacity: 0.5;
+}
+
+.red {
+  color: red;
+}
+
+/* Background images for specific elements */
+.w,
+.a,
+.s,
+.d,
+.j,
+.k,
+.l {
+  background-size: cover;
 }
 
 .w {
@@ -44,42 +73,7 @@ footer {
   background-image: url("../images/snare.png");
 }
 
-.set {
-  margin: 10% auto;
-}
-
-.game-over {
-  background-color: red;
-  opacity: 0.8;
-}
-
-.pressed {
-  box-shadow: 0 3px 4px 0 #DBEDF3;
-  opacity: 0.5;
-}
-
-.red {
-  color: red;
-}
-
-.drum {
-  outline: none;
-  border: 10px solid #404B69;
-  font-size: 5rem;
-  font-family: 'Arvo', cursive;
-  line-height: 2;
-  font-weight: 900;
-  color: #DA0463;
-  text-shadow: 3px 0 #DBEDF3;
-  border-radius: 15px;
-  display: inline-block;
-  width: 150px;
-  height: 150px;
-  text-align: center;
-  margin: 10px;
-  background-color: white;
-}
-
+/* Button styles */
 .Btn {
   width: 45px;
   height: 45px;
@@ -89,7 +83,6 @@ footer {
   border: none;
   background-color: transparent;
   position: relative;
-  /* overflow: hidden; */
   border-radius: 7px;
   cursor: pointer;
   transition: all .3s;
@@ -106,7 +99,7 @@ footer {
   letter-spacing: 0.8px;
   border-radius: 10px;
   transition: all .3s;
-  border: 1px solid rgba(156, 156, 156, 0.466);
+  border: 1px solid var(--btn-bg-color);
 }
 
 .BG {
@@ -127,6 +120,6 @@ footer {
 }
 
 .Btn:hover .svgContainer {
-  background-color: rgba(156, 156, 156, 0.466);
+  background-color: var(--btn-bg-color);
   backdrop-filter: blur(4px);
 }
