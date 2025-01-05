@@ -4,7 +4,7 @@ import path from 'path';
 
 // Diretórios de templates e saída
 const templatesDir = path.join(process.cwd(), 'views');
-const outputDir = path.join(process.cwd(), 'public');
+const outputDir = path.join(process.cwd(), 'docs');
 
 // Garante que o diretório de saída exista
 const ensureOutputDirExists = () => {
