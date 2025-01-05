@@ -19,7 +19,7 @@ const renderEJS = async (templateName, data = {}) => {
     const outputPath = path.join(outputDir, `${templateName}.html`);
 
     try {
-        const str = await ejs.renderFile(templatePath, data);
+        const str = await ejs.renderFile(templatePath, { ...data, recipe: data.recipe });
         fs.writeFileSync(outputPath, str);
         console.log(`Rendered ${templateName} to HTML`);
     } catch (err) {
