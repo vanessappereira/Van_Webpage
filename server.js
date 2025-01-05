@@ -40,13 +40,13 @@ app.get('/about', (req, res) => {
 
 // Drum Kit
 app.get('/drum', (req, res) => {
-    res.render('drumHomepage', { title: 'Drum Kit Project', pageName: 'Drum 🥁 Kit' });
+    res.render('drumHomepage', { title: 'Drum Kit Simulator', pageName: 'Drum 🥁 Kit' });
 });
 
 let data;
 // Taco Town Recipes
 app.get('/recipes', (req, res) => {
-    res.render('tacoRecipesHomepage', { title: 'Taco Town Recipe', pageName: '🌮 Taco Town 🌮', recipe: data });
+    res.render('tacoRecipesHomepage', { title: 'Taco Recipes', pageName: '🌮 Taco Town 🌮', recipe: data });
 });
 app.post("/getRecipe", (req, res) => {
     switch (req.body.choice) {
@@ -66,16 +66,18 @@ app.post("/getRecipe", (req, res) => {
 });
 // Dice Roller
 app.get('/diceRoller', (req, res) => {
-    res.render('diceHomepage', { title: 'Dice Roller Project', pageName: 'Dice 🎲 Roller' });
+    res.render('diceHomepage', { title: 'Dice Roller Simulator', pageName: 'Dice 🎲 Roller' });
 });
 // Band Name Generator
 app.get('/bandName', (req, res) => {
     const randomAdj = req.query.adj;
     const randomNoun = req.query.noun;
+    const title = 'Band Name Generator Project';
+    console.log(`Title: ${title}`);
 
-    res.render('bandNameHomepage', { title: 'Band Name Generator Project', pageName: 'Band Name Generator', randomAdj, randomNoun });
-
+    res.render('bandNameHomepage', { title, pageName: 'Band Name Generator', randomAdj, randomNoun });
 });
+
 app.post('/generateBandName', (req, res) => {
     const randomAdj = adj[Math.floor(Math.random() * adj.length)];
     const randomNoun = noun[Math.floor(Math.random() * noun.length)];
@@ -85,7 +87,7 @@ app.post('/generateBandName', (req, res) => {
 
 // Simon Says 
 app.get('/simon', (req, res) => {
-    res.render('simonSaysHomepage', { title: 'Simon Says Project', pageName: 'Press A Key to Start' });
+    res.render('simonSaysHomepage', { title: 'Simon Says Game', pageName: 'Press A Key to Start' });
 });
 
 // Start the server

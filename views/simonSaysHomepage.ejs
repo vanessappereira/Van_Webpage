@@ -1,7 +1,9 @@
-<%- include("partials/header.ejs") %>
+<%- include('partials/header', { title: title || 'Simon Says Game' }) %>
 	<!-- Header Centered -->
 	<div class="title">
-		<h1 id="level-title"> <%= pageName %> </h1>
+		<h1 id="level-title">
+			<%= pageName %>
+		</h1>
 	</div>
 	<!-- Game Container -->
 	<div class="container-simon">

@@ -1,17 +1,13 @@
-<%- include("partials/header.ejs") %>
-    <% if (locals.randomAdj && locals.randomNoun) { %>
+<%- include('partials/header', { title: title || 'Band Name Generator Project' }) %>
+    <% if (randomAdj && randomNoun) { %>
         <div class="title">
-            <h1>
-                Your band name is:
-
-            </h1>
+            <h1>Your band name is:</h1>
             <hr>
             <h1>
                 <%= randomAdj %>
                     <%= randomNoun %>
             </h1>
         </div>
-
         <% } else { %>
             <h1>Welcome to the Band Generator 🤟</h1>
             <% } %>
@@ -20,4 +16,3 @@
                     <input type="submit" value="Generate Name" class="button-band">
                 </form>
                 <%- include("partials/footer.ejs") %>
-                
