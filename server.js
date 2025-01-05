@@ -11,9 +11,10 @@ const app = express();
 
 let recipeJSON;
 
+// Lê o arquivo recipe.json e armazena os dados
 fs.readFile("recipe.json", (err, data) => {
     if (err) {
-        console.log(err);
+        console.error("Erro ao ler o arquivo recipe.json:", err);
         return;
     }
     recipeJSON = data.toString();
@@ -64,6 +65,7 @@ app.post("/getRecipe", (req, res) => {
     }
     res.redirect("/recipes");
 });
+
 // Dice Roller
 app.get('/diceRoller', (req, res) => {
     res.render('diceHomepage', { title: 'Dice Roller Simulator', pageName: 'Dice 🎲 Roller' });
