@@ -44,30 +44,25 @@ app.get('/drum', (req, res) => {
     res.render('drumHomepage', { title: 'Drum Kit Simulator', pageName: 'Drum 🥁 Kit' });
 });
 
+let data;
 // Taco Town Recipes
 app.get('/recipes', (req, res) => {
-    const recipes = recipeJSON ? JSON.parse(recipeJSON) : [];
-    res.render('tacoRecipesHomepage', { title: 'Taco Recipes', pageName: '🌮 Taco Town 🌮', recipe: recipes });
+    res.render('tacoRecipesHomepage', { title: 'Taco Recipes', pageName: '🌮 Taco Town 🌮', recipe: data });
 });
-
 app.post("/getRecipe", (req, res) => {
-    let data;
-    const recipes = recipeJSON ? JSON.parse(recipeJSON) : [];
-
     switch (req.body.choice) {
         case "chicken":
-            data = recipes[0];
+            data = JSON.parse(recipeJSON)[0];
             break;
         case "beef":
-            data = recipes[1];
+            data = JSON.parse(recipeJSON)[1];
             break;
         case "fish":
-            data = recipes[2];
+            data = JSON.parse(recipeJSON)[2];
             break;
         default:
             break;
     }
-
     res.redirect("/recipes");
 });
 
