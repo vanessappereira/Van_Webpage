@@ -11,9 +11,10 @@ const app = express();
 
 let recipeJSON;
 
+// Lê o arquivo recipe.json e armazena os dados
 fs.readFile("recipe.json", (err, data) => {
     if (err) {
-        console.log(err);
+        console.error("Erro ao ler o arquivo recipe.json:", err);
         return;
     }
     recipeJSON = data.toString();
@@ -43,27 +44,33 @@ app.get('/drum', (req, res) => {
     res.render('drumHomepage', { title: 'Drum Kit Simulator', pageName: 'Drum 🥁 Kit' });
 });
 
-let data;
 // Taco Town Recipes
 app.get('/recipes', (req, res) => {
-    res.render('tacoRecipesHomepage', { title: 'Taco Recipes', pageName: '🌮 Taco Town 🌮', recipe: data });
+    const recipes = recipeJSON ? JSON.parse(recipeJSON) : [];
+    res.render('tacoRecipesHomepage', { title: 'Taco Recipes', pageName: '🌮 Taco Town 🌮', recipe: recipes });
 });
+
 app.post("/getRecipe", (req, res) => {
+    let data;
+    const recipes = recipeJSON ? JSON.parse(recipeJSON) : [];
+
     switch (req.body.choice) {
         case "chicken":
-            data = JSON.parse(recipeJSON)[0];
+            data = recipes[0];
             break;
         case "beef":
-            data = JSON.parse(recipeJSON)[1];
+            data = recipes[1];
             break;
         case "fish":
-            data = JSON.parse(recipeJSON)[2];
+            data = recipes[2];
             break;
         default:
             break;
     }
+
     res.redirect("/recipes");
 });
+
 // Dice Roller
 app.get('/diceRoller', (req, res) => {
     res.render('diceHomepage', { title: 'Dice Roller Simulator', pageName: 'Dice 🎲 Roller' });
