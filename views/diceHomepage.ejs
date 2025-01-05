@@ -1,0 +1,23 @@
+<%- include("partials/header.ejs") %>
+    <!-- Header Centered -->
+    <div class="title">
+        <h1 class="TacoTitle">
+            <%= pageName %>
+        </h1>
+    </div>
+		<div class="container-dice">
+
+			<div class="dice">
+				<p class="player">Player 1</p>
+				<img class="img1" src="images/dice6.png" />
+			</div>
+
+			<div class="dice">
+				<p class="player">Player 2</p>
+				<img class="img2" src="images/dice6.png" />
+			</div>
+			<div class="container-dice">
+				<button class="buttonDice" onclick="rollDice()">Press Me!</button>
+			</div>
+		</div>
+<%- include("partials/footer.ejs") %>
