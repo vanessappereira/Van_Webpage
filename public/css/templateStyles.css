@@ -42,7 +42,8 @@ h1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 24px;
+    font-size: 20px;
+    height: 75px;
 }
 
 .navbar li {
@@ -61,7 +62,8 @@ h1 {
 }
 
 .navbar li a:hover {
-    background-color: #111;
+    background-color: #11111149;
+    border-radius: 20px;
 }
 
 .navbar-right {

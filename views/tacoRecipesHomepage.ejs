@@ -1,0 +1,42 @@
+<%- include("partials/header.ejs") %>
+    <!-- Header Centered -->
+    <div class="title">
+        <h1 class="TacoTitle">
+            <%= pageName %>
+        </h1>
+    </div>
+    <!-- Taco Container -->
+    <form action="/getRecipe" method="POST" class="buttons">
+        <button id="select-ingredient" type="submit" value="chicken" name="choice"><img src="images/chicken.png"
+                alt="chicken" class="ingredient-image"></button>
+        <button id="select-ingredient" type="submit" value="beef" name="choice"><img src="images/beef.png" alt="beef"
+                class="ingredient-image"></button>
+        <button id="select-ingredient" type="submit" value="fish" name="choice"><img src="images/fish.png" alt="fish"
+                class="ingredient-image"></button>
+    </form>
+    <div id="recipeContainer" class="hidden">
+        <% if (recipe) { %>
+            <h2 id="recipeTitle">
+                <%= recipe.name %>
+            </h2>
+            <h3> Ingredients: </h3>
+            <ul id="ingredientsList">
+                <li>
+                    <%= recipe.ingredients.protein.name %>, <%= recipe.ingredients.protein.preparation %>
+                </li>
+                <li>
+                    <%= recipe.ingredients.salsa.name %>
+                </li>
+                <% recipe.ingredients.toppings.forEach(topping=> {%>
+                    <li>
+                        <%= topping.quantity %> of <%= topping.name %>
+                    </li>
+                    <% }) %>
+            </ul>
+
+            <%} else {%>
+                <!-- If no recipe yet, show: -->
+                <h2 class="pick-ingredient">Pick your favourite taco ingredient 👆</h2>
+                <% } %>
+    </div>
+    <%- include("partials/footer.ejs") %>
