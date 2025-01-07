@@ -13,9 +13,11 @@ document.querySelectorAll('.cssbuttons-io').forEach(button => {
         } else if (buttonId === 'simonButton') {
             window.location.href = 'simonSaysHomepage.html';
         } else if (buttonId === 'otherProjectsButton') {
-            window.alert('This button is not currently linked to a project.');
+            window.alert('This button is not yet associated with any project.');
+        } else if (buttonId === 'aboutMe') {
+            window.alert('Implementation Pending: This button will be available in a future update.');
         } else {
-            window.alert('No matching button found.');
+            window.alert('No corresponding button was found.');
         }
     });
 });
