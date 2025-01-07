@@ -7,15 +7,10 @@
     <!-- Page Name -->
     <title>Band Name Generator</title>
     <!-- Icon -->
-    <link rel="icon" href="../public/icons/butterfly.svg" type="image/svg+xml">
+    <link rel="icon" href="public/icons/butterfly.svg" type="image/svg+xml">
     <!-- CSS -->
-    <link rel="stylesheet" href="../public/css/templateStyles.css">
-    <link rel="stylesheet" href="../public/css/indexStyles.css">
-    <link rel="stylesheet" href="../public/css/drumStyles.css">
-    <link rel="stylesheet" href="../public/css/simonStyles.css">
-    <link rel="stylesheet" href="../public/css/tacoStyles.css">
-    <link rel="stylesheet" href="../public/css/diceStyles.css">
-    <link rel="stylesheet" href="../public/css/bandStyles.css">
+    <link rel="stylesheet" href="public/css/templateStyles.css">
+    <link rel="stylesheet" href="public/css/bandStyles.css">
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
@@ -26,7 +21,7 @@
     <header>
         <nav>
             <ul class="navbar">
-                <li><a href="/">Home</a></li>
+                <li><a href="index.html" id="Homepage">Home</a></li>
                 <li><a href="#">About Me</a></li>
                 <li>
                     <a href="mailto:v.pereira.work@gmail.com" class="contact"
@@ -35,7 +30,7 @@
                 <li class="navbar-right">
                     <a href="https://github.com/vanessappereira" class="github-btn"
                         aria-label="Visit Vanessa Pereira's GitHub profile" target="_blank" rel="noopener noreferrer">
-                        <img src="../public/icons/github-logo.svg" alt="GitHub Logo" class="github-logo">
+                        <img src="public/icons/github-logo.svg" alt="GitHub Logo" class="github-logo">
                         <p>Vanessa Pereira</p>
                     </a>
                 </li>
@@ -43,11 +38,11 @@
         </nav>
     </header>
     <main>
-        <div class="title">
-            <h1>Welcome to the Band Generator 🤟</h1>
+        <div class="title" id="title-container">
+            <h1 id="welcome-message">Welcome to the Band Generator 🤟</h1>
         </div>
 
-        <form class="formBand" action="/generateBandName" method="POST">
+        <form class="formBand" id="generateNameForm">
             <input type="submit" value="Generate Name" class="button-band">
         </form>
     </main>
@@ -57,9 +52,7 @@
     <!-- JavaScript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ejs/3.1.6/ejs.min.js"></script>
-    <script src="../public/js/drum.js"></script>
-    <script src="../public/js/game.js" charset="utf-8"></script>
-    <script src="../public/js/dice.js" charset="utf-8"></script>
+    <script src="public/js/bandName.js"></script>
 
 </body>
 
