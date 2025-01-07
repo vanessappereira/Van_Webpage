@@ -6,8 +6,8 @@ function rollDice() {
     var randomNumber2 = Math.floor(Math.random() * (MAX_VALUE - MIN_VALUE + 1)) + MIN_VALUE;
 
     //Use the random number to pick a random dice image and replace the image
-    var randomImage1 = "./images/dice" + randomNumber1 + ".png";
-    var randomImage2 = "./images/dice" + randomNumber2 + ".png";
+    var randomImage1 = "./public/images/diceRoller/dice" + randomNumber1 + ".png";
+    var randomImage2 = "./public/images/diceRoller/dice" + randomNumber2 + ".png";
 
     //Change the image source of the dice
     document.querySelector(".img1").setAttribute("src", randomImage1);

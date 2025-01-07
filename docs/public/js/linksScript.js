@@ -14,8 +14,6 @@ document.querySelectorAll('.cssbuttons-io').forEach(button => {
             window.location.href = 'simonSaysHomepage.html';
         } else if (buttonId === 'otherProjectsButton') {
             window.alert('This button is not currently linked to a project.');
-        } else if (buttonId === 'Homepage') {
-            window.location.href = 'index.html';
         } else {
             window.alert('No matching button found.');
         }
