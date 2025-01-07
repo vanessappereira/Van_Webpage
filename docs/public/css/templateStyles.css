@@ -1,9 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
 :root {
     --background-image: url("../images/background.png");
-    --font-roboto: 'Roboto', sans-serif;
-    --font-dm-serif: 'DM Serif Text', serif;
+    --font-roboto: url("../fonts/roboto_regular.ttf"), sans-serif;
     --primary-color: #3cc5f3;
     --highlight-color: #DA0463;
     --secondary-color: #A06AC6;
