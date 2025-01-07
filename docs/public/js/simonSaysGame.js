@@ -70,7 +70,7 @@ function animatePress(currentColor) {
 }
 
 function playSound(name) {
-    var audio = new Audio("./public/sounds/" + name + ".mp3");
+    var audio = new Audio("./public/sounds/simonSays/" + name + ".mp3");
     audio.play();
 }
 
