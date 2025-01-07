@@ -7,16 +7,10 @@
     <!-- Page Name -->
     <title>Taco Recipes</title>
     <!-- Icon -->
-    <link rel="icon" href="../public/icons/butterfly.svg" type="image/svg+xml">
+    <link rel="icon" href="public/icons/butterfly.svg" type="image/svg+xml">
     <!-- CSS -->
-    <link rel="stylesheet" href="../public/css/templateStyles.css">
-    <link rel="stylesheet" href="../public/css/indexStyles.css">
-    <link rel="stylesheet" href="../public/css/drumStyles.css">
-    <link rel="stylesheet" href="../public/css/simonStyles.css">
-    <link rel="stylesheet" href="../public/css/tacoStyles.css">
-    <link rel="stylesheet" href="../public/css/diceStyles.css">
-    <link rel="stylesheet" href="../public/css/bandStyles.css">
-
+    <link rel="stylesheet" href="public/css/templateStyles.css">
+    <link rel="stylesheet" href="public/css/tacoStyles.css">
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
 </head>
@@ -26,7 +20,7 @@
     <header>
         <nav>
             <ul class="navbar">
-                <li><a href="/">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="#">About Me</a></li>
                 <li>
                     <a href="mailto:v.pereira.work@gmail.com" class="contact"
@@ -35,7 +29,7 @@
                 <li class="navbar-right">
                     <a href="https://github.com/vanessappereira" class="github-btn"
                         aria-label="Visit Vanessa Pereira's GitHub profile" target="_blank" rel="noopener noreferrer">
-                        <img src="../public/icons/github-logo.svg" alt="GitHub Logo" class="github-logo">
+                        <img src="public/icons/github-logo.svg" alt="GitHub Logo" class="github-logo">
                         <p>Vanessa Pereira</p>
                     </a>
                 </li>
@@ -50,16 +44,15 @@
             </h1>
         </div>
         <!-- Taco Container -->
-        <form action="/getRecipe" method="POST" class="buttons">
-            <button id="select-ingredient" type="submit" value="chicken" name="choice"><img
-                    src="../public/images/chicken.png" alt="chicken" class="ingredient-image"></button>
-            <button id="select-ingredient" type="submit" value="beef" name="choice"><img src="../public/images/beef.png"
-                    alt="beef" class="ingredient-image"></button>
-            <button id="select-ingredient" type="submit" value="fish" name="choice"><img src="../public/images/fish.png"
-                    alt="fish" class="ingredient-image"></button>
+        <form id="recipeForm" class="buttons">
+            <button type="button" data-choice="chicken"><img src="public/images/tacos/chicken.png" alt="chicken"
+                    class="ingredient-image"></button>
+            <button type="button" data-choice="beef"><img src="public/images/tacos/beef.png" alt="beef"
+                    class="ingredient-image"></button>
+            <button type="button" data-choice="fish"><img src="public/images/tacos/fish.png" alt="fish"
+                    class="ingredient-image"></button>
         </form>
         <div id="recipeContainer" class="hidden">
-            <!-- If no recipe yet, show: -->
             <h2 class="pick-ingredient">Pick your favourite taco ingredient 👆</h2>
         </div>
     </main>
@@ -69,9 +62,7 @@
     <!-- JavaScript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ejs/3.1.6/ejs.min.js"></script>
-    <script src="../public/js/drum.js"></script>
-    <script src="../public/js/game.js" charset="utf-8"></script>
-    <script src="../public/js/dice.js" charset="utf-8"></script>
+    <script src="public/js/tacoRecipes.js" defer></script>
 
 </body>
 
