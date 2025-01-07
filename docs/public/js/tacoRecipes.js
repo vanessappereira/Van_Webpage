@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
     let recipes;
 
     // Fetch and store the JSON data
-    fetch('../recipe.json')
+    fetch('./public/recipe.json')
         .then(response => response.json())
         .then(data => {
             recipes = data;
