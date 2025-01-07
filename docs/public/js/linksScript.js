@@ -14,10 +14,11 @@ document.querySelectorAll('.cssbuttons-io').forEach(button => {
             window.location.href = 'simonSaysHomepage.html';
         } else if (buttonId === 'otherProjectsButton') {
             window.alert('This button is not yet associated with any project.');
-        } else if (buttonId === 'aboutMe') {
-            window.alert('Implementation Pending: This button will be available in a future update.');
         } else {
             window.alert('No corresponding button was found.');
         }
     });
 });
+function showAlert() {
+    window.alert('Implementation Pending: This button will be available in a future update.');
+}
