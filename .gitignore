@@ -16,3 +16,5 @@ node_modules/
 *.code-workspace
 dist/
 aboutMe.json
+.env
+other stuff/
