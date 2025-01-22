@@ -1,0 +1,136 @@
+<style>
+    .container {
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        max-width: 1200px;
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 20px;
+        border-radius: 10px;
+        margin: auto;
+    }
+
+    .left-side {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        width: 40%;
+        height: auto;
+    }
+
+    .right-side {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 50%;
+        padding-left: 10px;
+    }
+
+    .vertical-navbar ul li {
+        position: relative;
+        transition: left 0.5s ease, background-color 0.5s ease;
+        padding: 10px;
+        margin: 5px 0;
+        list-style: none;
+        background-color: #f0f0f0;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .vertical-navbar ul li:hover,
+    .vertical-navbar ul li.selected {
+        background-color: #a31e1e;
+        color: white;
+        transform: translateX(-30px);
+    }
+
+
+    .right-side h2 {
+        margin-top: 0;
+    }
+
+    .cssbuttons-about {
+        position: relative;
+        font-family: inherit;
+        font-weight: bold;
+        font-size: 18px;
+        letter-spacing: 0.05em;
+        border-radius: 0.8em;
+        cursor: pointer;
+        border: none;
+        background: linear-gradient(to right, #8e2de2, #4a00e0);
+        color: #4400ff;
+        /* Cor do texto */
+        overflow: hidden;
+        padding: 15px 20px;
+        /* Ajuste de padding para melhor aparência */
+        text-align: center;
+        transition: all 0.4s ease;
+        /* Transição suave para todas as mudanças */
+    }
+
+    .cssbuttons-about:nth-child(odd) {
+        background: linear-gradient(to right, #8e2de2, #4a00e0);
+    }
+
+    .cssbuttons-about:nth-child(even) {
+        background: linear-gradient(to right, #4a00e0, #8e2de2);
+    }
+
+    .cssbuttons-about svg {
+        width: 1.2em;
+        height: 1.2em;
+        margin-right: 0.5em;
+    }
+
+    .cssbuttons-about span {
+        position: relative;
+        z-index: 10;
+        transition: color 0.4s;
+        display: inline-flex;
+        align-items: center;
+        padding: 0.8em 1.2em 0.8em 1.05em;
+    }
+
+    .cssbuttons-about:hover,
+    .cssbuttons-about.selected {
+        background: linear-gradient(to right, #4a00e0, #8e2de2);
+        /* Mudança de cor no hover */
+        color: #ffffff;
+        /* Muda a cor do texto no hover */
+        transform: translateX(-10px);
+        /* Animação de movimento para a esquerda */
+    }
+
+    .cssbuttons-about::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -10%;
+        width: 120%;
+        height: 100%;
+        background: var(--button-color);
+        transform: skew(30deg);
+        transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+        z-index: 0;
+    }
+
+    .cssbuttons-about:hover::before,
+    .cssbuttons-about.selected::before {
+        transform: translate3d(100%, 0, 0);
+    }
+
+    .cssbuttons-about:active {
+        transform: scale(0.95);
+    }
+
+    .cssbuttons-about.selected {
+        background: linear-gradient(to right, #00c6ff, #0072ff);
+        /* Cor diferente para botão selecionado */
+        color: #07f513;
+        /* Mudar cor texto quando selecionado */
+        transform: translateX(-30px);
+        /* Manter o botão deslocado para a esquerda */
+    }
+</style>
