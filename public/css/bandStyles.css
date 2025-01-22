@@ -1,0 +1,33 @@
+.button-band {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 14px;
+}
+
+.button-band:hover {
+    background-color: #0056b3;
+}
+
+.titleName,
+.nameGenerated {
+    padding-bottom: 20px;
+}
+
+.titleName {
+    font-size: 5rem;
+    color: var(--secondary-color);
+    text-shadow: 10px 0 black;
+}
+
+.nameGenerated {
+    font-size: 3rem;
+    color: aliceblue;
+}
