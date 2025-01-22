@@ -1,20 +1,34 @@
+# Project Root
 .architect
+.env
+*.code-workspace
+
+# Build and Distribution
+build/
+dist/
+
+# Bootstrap Files
 bootstrap.css
 bootstrap.js
 bootstrap.json
 bootstrap.jsonp
-build/
+
+# Configuration Files
 classic.json
 classic.jsonp
-ext/
 modern.json
 modern.jsonp
-resources/sass/.sass-cache/
-resources/.arch-internal-preview.css
-.arch-internal-preview.css
-node_modules/
-*.code-workspace
-dist/
 aboutMe.json
-.env
+
+# Resources
+resources/
+    sass/
+        .sass-cache/
+    .arch-internal-preview.css
+
+# External Libraries
+ext/
+node_modules/
+
+# Miscellaneous
 other stuff/
