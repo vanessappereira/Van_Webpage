@@ -3,8 +3,6 @@ import { config } from 'dotenv';
 import express from 'express';
 import cors from 'cors';
 
-
-
 // Load environment variables from .env file
 config();
 
