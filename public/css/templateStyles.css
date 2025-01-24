@@ -83,12 +83,12 @@ h1 {
     justify-content: center;
 }
 
-.github-btn {
+.github-btn .linkedin-btn{
     display: inline-flex;
     align-items: center;
 }
 
-.github-logo {
+.github-logo .linkedin-logo{
     width: 32px;
     height: 32px;
     margin-right: 8px;

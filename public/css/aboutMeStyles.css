@@ -89,7 +89,7 @@
     content: "";
     position: absolute;
     top: 0;
-    left: -10%;
+    left: -5%;
     width: 120%;
     height: 100%;
     background: var(--button-color);
@@ -156,8 +156,9 @@
     list-style: disc;
     text-align: left;
     padding: 0;
-    margin: 0;
+    margin: 2rem;
     font-size: 20px;
+    padding-bottom: 10px;
 }
 
 .exp-pro {
