@@ -1,15 +1,16 @@
 import { MongoClient } from 'mongodb';
 import { config } from 'dotenv';
 import express from 'express';
+import cors from 'cors';
 
-// Load environment variables from .env file
 config();
 
-const uri = process.env.MONGO_URI;
+const uri = process.env.MONGODB_URL;
 const collections = ['perfil', 'formacao', 'experiencia_profissional'];
 
 const app = express();
 const port = 3000;
+app.use(cors());
 
 async function fetchData() {
     const client = new MongoClient(uri);

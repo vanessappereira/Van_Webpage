@@ -11,9 +11,8 @@
     <!-- CSS -->
     <link rel="stylesheet" href="public/css/templateStyles.css">
     <link rel="stylesheet" href="public/css/aboutMeStyles.css ">
-
+    <link rel="stylesheet" href="public/css/clock.css">
 </head>
-
 
 <body>
     <!-- Horizontal Navbar -->
@@ -26,6 +25,7 @@
                     <a href="mailto:v.pereira.work@gmail.com" class="contact"
                         aria-label="Contact Vanessa Pereira via email">Contact Me</a>
                 </li>
+                <li id="MyClockDisplay" class="clock" onload="showTime()"></li>
                 <li class="navbar-right">
                     <a href="https://github.com/vanessappereira" class="github-btn"
                         aria-label="Visit Vanessa Pereira's GitHub profile" target="_blank" rel="noopener noreferrer">
@@ -59,6 +59,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ejs/3.1.6/ejs.min.js"></script>
     <script src="public/js/aboutMe.js" defer></script>
+    <script src="public/js/clock.js" charset="utf-8" defer></script>
 </body>
 
 </html>
