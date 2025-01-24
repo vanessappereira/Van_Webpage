@@ -1,6 +1,6 @@
 async function fetchData() {
     try {
-        const response = await fetch('http://localhost:3000/api/data');
+        const response = await fetch('https://vanwebpage.onrender.com/api/data');
         if (response.ok) {
             const data = await response.json();
             return data;
