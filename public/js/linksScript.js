@@ -12,6 +12,8 @@ document.querySelectorAll('.cssbuttons-io').forEach(button => {
             window.location.href = 'bandNameHomepage.html';
         } else if (buttonId === 'simonButton') {
             window.location.href = 'simonSaysHomepage.html';
+        }else if (buttonId === 'aldeiasHistoricas') {
+            window.location.href = 'aldeiasHistoricas.html';
         } else if (buttonId === 'otherProjectsButton') {
             window.alert('This button is not yet associated with any project.');
         } else {

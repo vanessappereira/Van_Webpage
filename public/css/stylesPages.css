@@ -1,0 +1,84 @@
+section {
+  margin: 10px;
+  font-family: Arial, sans-serif;
+}
+
+/* Caption text */
+.text-container {
+  text-align: center;
+  width: 60%;
+}
+
+.text {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: rgba(0, 0, 0, 0.603);
+  color: #f2f2f2;
+  font-size: 30px;
+  border-radius: 15px;
+}
+
+/* About Styles */
+.about {
+  display: flex;
+  flex-direction: row;
+}
+
+#infos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+/* Hide these sections initially */
+#villageHistory,
+#villageInfo,
+#villageGallery {
+  display: none;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#aboutText {
+  text-align: left;
+  padding-top: 9px;
+}
+
+#aboutImage {
+  width: 100%;
+  max-width: 70%;
+  border-radius: 10px;
+  max-height: 70%;
+}
+
+#infoImage {
+  width: 100%;
+  max-width: 70%;
+  max-height: 40vh;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.register {
+  margin-left: 25%;
+  width: 50%;
+  padding: 20px;
+  align-content: center;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
