@@ -1,7 +1,6 @@
 async function getImagemPrecipitacao(precipitaProb) {
   // Convert into double
   const doublePrecipitacao = parseFloat(precipitaProb);
-  console.log(doublePrecipitacao);
 
   if (doublePrecipitacao === 0) {
     return "sol.png";
@@ -52,7 +51,6 @@ async function obterPrevisao() {
     const dataLocalDistrict = dataAPI.data;
 
     const titleId = document.getElementById("title").textContent;
-    console.log(titleId);
 
     /* Almeida, Castelo Rodrigo, Linhares da Beira e Marialva pertencem ao distrito da Guarda;
      * Monsanto pertence ao distrito de Castelo Branco. */
@@ -75,7 +73,6 @@ async function obterPrevisao() {
     if (forecast) {
       const selectedValue = forecast.local;
       const idValue = forecast.globalIdLocal;
-      console.log("id value: " + idValue);
       await fetchMeteorologia(idValue, selectedValue);
     } else {
       document.getElementById("previsao").innerHTML +=
