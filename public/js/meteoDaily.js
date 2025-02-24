@@ -18,7 +18,7 @@ async function generateWeatherHTML(weatherData, districtName) {
     const imageSrc = await getImagemPrecipitacao(item.precipitaProb);
     meteoHTML += `
       <tr>
-      	<td><img src="public/images/${imageSrc}" height="45" alt="Weather Image"></td>
+        <td><img src="/public/images/${imageSrc}" height="45" alt="Weather Image"></td>
         <td>Min Temperature:<br>${item.tMin}°C</td>
         <td>Max Temperature:<br>${item.tMax}°C</td>
       </tr>`;
