@@ -1,6 +1,5 @@
 async function getImagemPrecipitacao(precipitaProb) {
   const doublePrecipitacao = parseFloat(precipitaProb);
-  console.log(doublePrecipitacao);
 
   if (doublePrecipitacao === 0) {
     return "sol.png";
@@ -18,7 +17,7 @@ async function generateWeatherHTML(weatherData, districtName) {
     const imageSrc = await getImagemPrecipitacao(item.precipitaProb);
     meteoHTML += `
       <tr>
-        <td><img src="/public/images/${imageSrc}" height="45" alt="Weather Image"></td>
+        <td><img src="public/images/${imageSrc}" height="45" alt="Weather Image"></td>
         <td>Min Temperature:<br>${item.tMin}°C</td>
         <td>Max Temperature:<br>${item.tMax}°C</td>
       </tr>`;
@@ -69,9 +68,6 @@ async function obterMeteoDiaria() {
         districtNames.lisboa = district.local;
       }
     });
-    console.log("Guarda global ID: " + districtIDs.guarda);
-    console.log("Castelo Branco global ID: " + districtIDs.casteloBranco);
-    console.log("Lisboa global ID: " + districtIDs.lisboa);
 
     // Fetch weather data for Guarda
     const weatherDataGuarda = await fetchWeatherData(districtIDs.guarda);
