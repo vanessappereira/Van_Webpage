@@ -10,6 +10,7 @@
     height: 80vh;
     justify-content: flex-start;
     align-items: center;
+    overflow-y: auto;
 }
 
 .horizontal-nav {
