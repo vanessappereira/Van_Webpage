@@ -76,7 +76,7 @@ function loadSection(section, infoBox) {
       const funcoesList = exp.funcoes.map(funcao => `<li class="exp-info">${funcao}</li>`).join('');
       return `
               <li class="exp-pro">
-                <p><strong>Empresa:</strong> ${exp.empresa}</p>
+                <p style="padding-top: 10px;"><strong>Empresa:</strong> ${exp.empresa}</p>
                 <p><strong>Cargo:</strong> ${exp.cargo}</p>
                 <p><strong>Período:</strong> ${exp.periodo}</p>
                 <p><strong>Funções desempenhadas:</strong></p>
