@@ -1,0 +1,82 @@
+/* =====================================================
+   PAGE LAYOUT – BASE GLOBAL
+   Usado em TODAS as páginas
+===================================================== */
+
+/* ===========================
+   BODY E FUNDO
+=========================== */
+
+body {
+    margin: 30px;
+    background: #1f2933;
+    color: #1f2933;
+}
+
+/* ===========================
+   SITE COM LARGURA FIXA
+=========================== */
+
+.site-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ===========================
+   CONTEÚDO PRINCIPAL
+=========================== */
+
+.page-container {
+    background: rgba(248, 249, 251, 0.96);
+}
+
+/* ===========================
+   GRID (CONTEÚDO + SIDEBAR)
+=========================== */
+
+.page-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 24px;
+    align-items: start;
+}
+
+/* ===========================
+   SEÇÕES INTERNAS
+=========================== */
+
+.page-section {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 24px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+/* ===========================
+   SIDEBAR
+=========================== */
+
+.page-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    position: sticky;
+    top: 120px;
+}
+
+/* ===========================
+   RESPONSIVO BASE
+=========================== */
+
+@media (max-width: 900px) {
+    .page-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .page-sidebar {
+        position: static;
+        margin-top: 40px;
+    }
+}

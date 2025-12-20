@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <!-- Base Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Linhares da Beira | Aldeias Históricas</title>
+    <link rel="icon" href="../images/logo.png">
+
+    <!-- CSS ESPECÍFICO DAS ALDEIAS -->
+    <link rel="stylesheet" href="../../css/main.css">
+
+    <!-- JS ESPECÍFICO DAS ALDEIAS -->
+    <script type="module" src="../../js/main.js"></script>
+</head>
+
+<body class="aldeias-page" data-village="Linhares da Beira">
+    <!-- ========= NAVBAR DAS ALDEIAS ========= -->
+    <nav class="aldeias-nav">
+        <ul class="aldeias-menu">
+
+            <!-- LOGO -->
+            <li class="aldeias-brand">
+                <a href="../../index.html" class="aldeias-brand-link">
+                    <img src="../../images/castle.svg" alt="Aldeias Históricas">
+                    <span>Aldeias Históricas | Homepage</span>
+                </a>
+            </li>
+
+            <!-- ALDEIAS -->
+            <li><a href="../almeida/index.html">Almeida</a></li>
+            <li><a href="../castelo_rodrigo/index.html">Castelo Rodrigo</a></li>
+            <li class="active">Linhares da Beira</li>
+            <li><a href="../marialva/index.html">Marialva</a></li>
+            <li><a href="../monsanto/index.html">Monsanto</a></li>
+
+            <!-- VOLTAR À HOMEPAGE -->
+            <li class="aldeias-back">
+                <a href="../../../../index.html">Voltar à Homepage</a>
+            </li>
+
+        </ul>
+    </nav>
+
+    <!-- ========= CONTEÚDO PRINCIPAL ========= -->
+    <main class="page-container">
+        <section class="about">
+
+            <section class="page-grid">
+
+                <!-- ===== COLUNA ESQUERDA ===== -->
+                <div>
+                    <!-- HEADER -->
+                    <header class="village-header">
+                        <h1 id="title">Linhares da Beira</h1>
+
+                        <div class="village-buttons">
+                            <button class="button" onclick="showAbout(event)">Sobre</button>
+                            <button class="button" onclick="showHistory(event)">História</button>
+                            <button class="button" onclick="showInfo(event)">O que ver</button>
+                            <button class="button" onclick="showGallery(event)">Galeria</button>
+                            <a class="button"
+                                href="https://aldeiashistoricasdeportugal.com/wp-content/uploads/2019/02/AF_LINHARES_DA_BEIRA_folheto_aldeia_PT_web.pdf"
+                                target="_blank">Folheto da aldeia</a>
+                        </div>
+                    </header>
+
+                    <!-- SOBRE -->
+                    <section id="aboutVillage" class="page-section">
+                        <h2 class="section-title">Sobre</h2>
+
+                        <div class="about-content">
+                            <p>
+                                Aldeia medieval do século XII, Linhares da Beira possui uma diversidade arquitetónica e
+                                artística ímpar, fruto do legado de várias épocas. Em 1169, recebeu o seu primeiro
+                                foral,
+                                atribuído por D. Afonso Henriques. Mas só mais tarde, no reinado de D. Dinis, foi
+                                erigido o seu
+                                imponente Castelo, ex-líbris da aldeia e principal cartão de visita nos nossos dias.
+                                Deambular
+                                pelas ruas desta aldeia museu é fazer uma incursão ao passado, à sua história, e sentir
+                                a brisa
+                                do Vale do Mondego a acariciar-nos o rosto.
+                            </p>
+                            <div class="image-wrapper">
+                                <img src="images/Cova-da-Loba.jpg" alt="Linhares da Beira Imagens" id="aboutImage">
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- HISTÓRIA -->
+                    <section id="villageHistory" class="page-section">
+                        <h2 class="section-title">História</h2>
+
+                        <!-- BLOCO 1 -->
+                        <div class="history-block reverse">
+                            <img class="history-image direita" src="images/linhares1.jpg" alt="">
+
+                            <div class="history-text">
+                                <p>
+                                    Vila de fundação medieval, com foral concedido em 1169 por D. Afonso Henriques, que,
+                                    em
+                                    1855
+                                    perde este estatuto com a reforma administrativa liberal. Apesar do local ter
+                                    conhecido
+                                    a
+                                    fixação de povos pré-romanos e existir registo escrito da passagem de romanos,
+                                    visigodos
+                                    e
+                                    muçulmanos, a história de Linhares, tem origem no contexto gerado com a reconquista
+                                    Cristã.
+                                    Estabilizadas as fronteiras do reino português, Linhares continuou a ter significado
+                                    estratégico
+                                    pelo menos até ao século XVII, pois fazia parte do sistema defensivo que guardava a
+                                    Bacia do
+                                    Mondego, na retaguarda das fortificações da raia beirã.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- BLOCO 2 -->
+                        <div class="history-block history-flex">
+                            <img class="history-image esquerda" src="images/linhares2.jpg" alt="">
+
+                            <div class="history-text">
+                                <p>
+                                    A estrutura de ocupação do espaço da antiga vila de Linhares conjuga assim um tipo
+                                    característico de povoamento medieval (séculos XII-XIV), com desenvolvimentos
+                                    significativos
+                                    no
+                                    período quinhentista (século XVI). Nesta centúria a vila terá atingido uma
+                                    configuração
+                                    próxima
+                                    da atual, ainda que no património edificado pesem, pelo impacto no tecido urbano,
+                                    algumas
+                                    construções mais tardias (séculos XVII-XIX).
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- BLOCO 3 -->
+                        <div class="history-block reverse">
+                            <img class="history-image direita" src="images/linhares3.jpg" alt="">
+
+                            <div class="history-text">
+                                <p>
+                                    O castelo, implantado num cabeço rochoso a cerca de 820 m de altitude e dominando o
+                                    Vale
+                                    do
+                                    Mondego, constitui o núcleo gerador do aglomerado. Na encosta, sobranceira à várzea
+                                    de
+                                    Linhares
+                                    e cruzada por antiga via romana, estendeu-se a povoação: o sistema fortificado,
+                                    entregue
+                                    a
+                                    um
+                                    alcaide e dispondo de pequena guarnição militar, defendia um território bem como a
+                                    sua
+                                    população
+                                    e bens; o foral, concedido pelo Rei, prescrevia a autonomia concelhia e organizava a
+                                    vida
+                                    económica e social do povoado; a Igreja estabeleceu as paróquias.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- BLOCO 4 -->
+                        <div class="history-block history-flex">
+                            <img class="history-image esquerda-poligono" src="images/linhares4.jpg" alt="">
+
+                            <div class="history-text">
+                                <p>
+                                    A vila descreve, no sopé do Castelo, um perímetro triangular, em cujos vértices se
+                                    situam
+                                    três
+                                    espaços ordenadores da malha urbana: o Lg. da Misericórdia, à entrada da povoação; o
+                                    Lg.
+                                    de
+                                    S.
+                                    Pedro, na zona denominada “Cimo da Vila”; e o Lg. da Igreja, próximo do Castelo e no
+                                    acesso
+                                    ao
+                                    Campo da Corredoura, terreno de usufruto comum. Estes largos definiram-se em torno
+                                    de
+                                    igrejas –
+                                    hoje desaparecida a de S. Pedro – e constituíam o centro das paróquias de fundação
+                                    medieval.
+                                    Na
+                                    base do triângulo e no ponto oposto à Matriz, localiza-se o Lg. do Pelourinho,
+                                    outrora o
+                                    centro
+                                    cívico da Vila.
+                                </p>
+
+                                <p>
+                                    Da assistência ao peregrino, pobres e doentes sobra-nos o edifício do Lg. da
+                                    Misericórdia,
+                                    que
+                                    acolheu duas instituições típicas da sociedade medieval e moderna – a Albergaria e o
+                                    Hospital.
+                                    Também do abastecimento de água, temos para observar três fontes dos séculos XII,
+                                    XVI e
+                                    XIX.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- BLOCO 5 -->
+                        <div class="history-image-bg linhares-beira">
+                            <div class="history-overlay">
+                                <p>
+                                    <em>
+                                        Além da casa tradicional e popular disseminada por toda a vila, contam-se as
+                                        casas
+                                        nobres
+                                        dos
+                                        séculos XVIII-XIX, destacando-se janelas e portas decoradas ao gosto Manuelino
+                                        (século
+                                        XVI),
+                                        quase sempre moradias de proprietários agrícolas mais abastados ou da burguesia
+                                        local
+                                        ligada
+                                        ao
+                                        comércio. Entre estes encontrava-se a comunidade judaica, minoria étnica e
+                                        religiosa
+                                        obrigada a
+                                        viver apartada da comunidade cristã e cujo bairro – judiaria – se situava numa
+                                        transversal à
+                                        Rua
+                                        Direita: sobre a porta de acesso ao bairro (Arco) figura uma das mais elaboradas
+                                        janelas
+                                        manuelinas de Linhares.
+                                    </em>
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- O QUE VER -->
+                    <section id="villageInfo" class="page-section">
+                        <h2 class="section-title">O que ver</h2>
+
+                        <div id="infos" class="infos-grid">
+                            <!-- ESQUERDA – topo -->
+                            <figure class="small">
+                                <img src="https://aldeiashistoricasdeportugal.com/wp-content/uploads/2019/01/rascunho-automatico-186.jpg"
+                                    alt="Calçada Romana">
+                                <figcaption>Calçada Romana</figcaption>
+                            </figure>
+
+                            <!-- ESQUERDA – baixo -->
+                            <figure class="small">
+                                <img src="https://aldeiashistoricasdeportugal.com/wp-content/uploads/2019/02/rascunho-automatico-515.jpg"
+                                    alt="Castelo de Linhares">
+                                <figcaption>Castelo de Linhares</figcaption>
+                            </figure>
+
+                            <!-- DIREITA – grande -->
+                            <figure class="large">
+                                <img src="https://aldeiashistoricasdeportugal.com/wp-content/uploads/2019/02/rascunho-automatico-707.jpg"
+                                    alt="Fonte de Mergulho e Fórum" />
+                                <figcaption>Fonte de Mergulho e Fórum</figcaption>
+                            </figure>
+                        </div>
+                    </section>
+
+                    <!-- GALERIA -->
+                    <section id="villageGallery" class="page-section slideshow-container slideshow-linhares-beira">
+
+                        <div class="slideshow-caption">
+                            <h3>Pontos turísticos de Linhares da Beira</h3>
+                            <p class="history-text">
+                                Linhares da Beira é uma aldeia medieval nas encostas da Serra da Estrela, conhecida pelo
+                                seu castelo com vistas sobre o vale do Mondego. O casario em granito e as ruas estreitas
+                                dão-lhe grande charme, sendo hoje também um destino procurado para parapente, caminhadas
+                                e turismo de natureza.
+                            </p>
+                        </div>
+
+                        <div class="aldeiaSlides-container"></div>
+
+                        <!-- Next and previous buttons -->
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </section>
+                </div>
+
+                <!-- ===== SIDEBAR ===== -->
+                <aside class="page-sidebar">
+
+                    <div id="previsao" class="page-section"></div>
+
+                    <!-- ONDE FICAR / COMER -->
+                    <div class="page-section village-links">
+                        <h2 class="section-title">Planear visita</h2>
+
+                        <div class="links-grid">
+                            <a class="visit-link"
+                                href="https://www.visitportugal.com/pt-pt/search/site?regioes=118&context=490&localidades=159"
+                                target="_blank">
+                                🏨 Onde ficar
+                            </a>
+
+                            <a class="visit-link"
+                                href="https://www.visitportugal.com/pt-pt/search/site?regioes=118&context=405&localidades=159"
+                                target="_blank">
+                                🍽 Onde comer
+                            </a>
+                        </div>
+                    </div>
+
+                    <div id="mapa" class="page-section">
+                        <iframe src="https://www.google.com/maps?q=Linhares+da+Beira,+Portugal&output=embed"
+                            loading="lazy"></iframe>
+                    </div>
+                </aside>
+            </section>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bottomPage">
+        <em> &copy; 2025 Vanessa Pereira </em>
+    </footer>
+</body>
+
+</html>

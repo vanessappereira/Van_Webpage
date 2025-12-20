@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+	<!-- BASE -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Almeida | Aldeias Históricas</title>
+	<link rel="icon" href="../images/logo.png">
+
+	<!-- CSS ESPECÍFICO DAS ALDEIAS -->
+	<link rel="stylesheet" href="../../css/main.css">
+
+	<!-- JS ESPECÍFICO DAS ALDEIAS -->
+	<script type="module" src="../../js/main.js"></script>
+</head>
+
+<body class="aldeias-page" data-village="Almeida">
+	<!-- ========= NAVBAR DAS ALDEIAS ========= -->
+	<nav class="aldeias-nav">
+		<ul class="aldeias-menu">
+			<!-- LOGO -->
+			<li class="aldeias-brand">
+				<a href="../../index.html" class="aldeias-brand-link">
+					<img src="../../images/castle.svg" alt="Aldeias Históricas">
+					<span>Aldeias Históricas | Homepage</span>
+				</a>
+			</li>
+
+			<!-- ALDEIAS -->
+			<li class="active">Almeida</a></li>
+			<li><a href="../castelo_rodrigo/index.html">Castelo Rodrigo</a></li>
+			<li><a href="../linhares_beira/index.html">Linhares da Beira</a></li>
+			<li><a href="../marialva/index.html">Marialva</a></li>
+			<li><a href="../monsanto/index.html">Monsanto</a></li>
+
+			<!-- VOLTAR À HOMEPAGE -->
+			<li class="aldeias-back">
+				<a href="../../../../index.html">Voltar à Homepage</a>
+			</li>
+
+		</ul>
+	</nav>
+
+	<!-- ========= CONTEÚDO PRINCIPAL ========= -->
+	<main class="page-container">
+		<section class="about">
+
+			<section class="page-grid">
+
+				<!-- ===== COLUNA ESQUERDA ===== -->
+				<div>
+					<!-- HEADER -->
+					<header class="village-header">
+						<h1 id="title">Almeida</h1>
+
+						<div class="village-buttons">
+							<button class="button" onclick="showAbout(event)">Sobre</button>
+							<button class="button" onclick="showHistory(event)">História</button>
+							<button class="button" onclick="showInfo(event)">O que ver</button>
+							<button class="button" onclick="showGallery(event)">Galeria</button>
+
+							<a class="button"
+								href="https://aldeiashistoricasdeportugal.com/wp-content/uploads/2019/02/AF_ALMEIDA_folheto_aldeia_PT_web.pdf"
+								target="_blank">Folheto da aldeia</a>
+						</div>
+					</header>
+
+					<!-- SOBRE -->
+					<section id="aboutVillage" class="page-section">
+						<h2 class="section-title">Sobre</h2>
+
+						<div class="about-content">
+							<div class="history-text">
+								<p>
+									Almeida é uma vila fortificada de grande relevância histórica, marcada pela sua
+									imponente fortaleza abaluartada em forma de estrela, construída nos séculos XVII e
+									XVIII. Teve um papel fundamental nas guerras com Espanha, especialmente durante as
+									Invasões Francesas.
+								</p>
+								<p>
+									Para além das muralhas, destacam-se o Museu Militar, a antiga
+									praça-forte e o traçado urbano regular, que fazem de Almeida um destino privilegiado
+									para quem aprecia história militar e património bem conservado.
+								</p>
+							</div>
+						</div>
+
+						<div class="image-wrapper">
+							<img src="images/o-cacador.jpg" alt="Vista aérea de Almeida" loading="lazy">
+						</div>
+					</section>
+
+					<!-- HISTÓRIA -->
+					<section id="villageHistory" class="page-section">
+						<h2 class="section-title">História</h2>
+
+						<!-- BLOCO 1 -->
+						<div class="history-block history-flex">
+							<img class="history-image esquerda" src="images/almeida1.jpg" alt="">
+
+							<div class="history-text">
+								<p>
+									Almeida terá tido origem na migração dos habitantes de um castro lusitano,
+									localizado a
+									Norte do lugar do Enxido da Sarça, ocupado em 61 a.C. pelos Romanos, e depois pelos
+									povos
+									bárbaros. Dada a
+									sua situação em planalto, os Árabes chamaram-na Al-Mêda (a Mesa), Talmeyda ou
+									Almeydan,
+									tendo
+									construído um
+									pequeno Castelo (séc. VIII- IX).
+
+									No período da Reconquista, os Cristãos tomaram-na definitivamente em 1190 e foi
+									sucessivamente
+									disputada a
+									Leão, passando à posse portuguesa com o Tratado de Alcanizes em 1297.</p>
+							</div>
+
+						</div>
+
+						<!-- BLOCO 2 -->
+						<div class="history-block reverse">
+							<img class="history-image direita" src="images/almeida2.jpg" alt="">
+
+							<div class="history-text">
+								<p>
+									Recebeu foral de D. Dinis (1296), que reconstruiu o Castelo, e foral novo de D.
+									Manuel
+									(1510).
+									Junto ao
+									Castelo de planta retangular e quatro torres circulares, cresceu o núcleo medieval
+									limitado
+									pelas muralhas,
+									cujo vestígio se vê na Porta do Sol, traçado que a Rua dos Combatentes acompanha e
+									que
+									define o
+									velho burgo.
+									No Castelo havia a primitiva Igreja Matriz.
+								</p>
+
+								<p>
+									A explosão do Revelim do Paiol, em 1810, motivada pelas invasões francesas, arrasou
+									grande
+									parte
+									da vila,
+									sendo esta igreja transferida para a do Convento de N. Sra. do Loreto - que
+									apresenta um
+									portal
+									barroco -
+									tomando o nome de N. Sra. das Candeias, cuja procissão se realiza a 2 de Fevereiro.
+									A
+									religiosidade popular
+									está também assinalada nos passos da via-sacra.
+								</p>
+							</div>
+						</div>
+
+						<!-- BLOCO 3 -->
+						<div class="history-block history-flex">
+							<img class="history-image esquerda-poligono" src="images/almeida3.jpg" alt="">
+
+							<div class="history-text">
+								<p>
+									A importância desta praça defensiva levou à expansão urbana e institucional sendo
+									dignos
+									de
+									nota
+									os
+									edifícios do antigo Quartel de Artilharia, Vedoria, Tribunal, bem como a Igreja e
+									Hospital
+									da
+									Misericórdia,
+									de portal clórico - exemplos da arquitetura seiscentista.
+								</p>
+
+								<p>
+									A sua qualidade de praça-forte marcou também o próprio urbanismo, com quarteirões
+									destinados
+									a
+									alojar os
+									militares, como o caso do antigo quartel de Cavalaria. De realçar, o Quartel das
+									Esquadras,
+									edificado em
+									1762/69 (em frente do qual se fazia a parada militar, zona hoje ajardinada), e a
+									célebre
+									Casa da
+									Roda -
+									instituição criada por Pina Manique em 1783, para recolhimento das crianças
+									expostas. No
+									lugar
+									da Roda
+									encontra-se uma janela.
+								</p>
+							</div>
+						</div>
+
+						<!-- BLOCO 4 -->
+						<div class="history-image-bg almeida">
+							<div class="history-overlay">
+								<p class="history-text">
+									<em>
+										Durante a Guerra dos Sete Anos (1756–1763) Almeida voltou à posse de
+										Espanha,
+										tendo retomado ao domínio Português em 1763.
+									</em>
+								</p>
+
+								<p class="history-text">
+									Nas lutas liberais tomou partido por D. Miguel entre 1829 e 1832, acabando por
+									capitular após duras lutas fratricidas, que de novo destruíram as muralhas —
+									reconstruídas a partir de 1853. Em 1927 saiu de Almeida o último Esquadrão de
+									Cavalaria, perdendo desde então a atividade militar que, durante séculos,
+									foi a razão essencial da sua existência.
+								</p>
+							</div>
+						</div>
+					</section>
+
+					<!-- O QUE VER -->
+					<section id="villageInfo" class="page-section">
+						<h2 class="section-title">O que ver</h2>
+
+						<div id="infos" class="infos-grid">
+							<!-- ESQUERDA – topo -->
+							<figure class="small">
+								<img src="https://aldeiashistoricasdeportugal.com/wp-content/uploads/2020/03/antigo-quartel-da-cavalaria.jpg"
+									alt="Antigo Quartel de Cavalaria">
+								<figcaption>Antigo Quartel de Cavalaria</figcaption>
+							</figure>
+
+							<!-- ESQUERDA – baixo -->
+							<figure class="small">
+								<img src="https://aldeiashistoricasdeportugal.com/wp-content/uploads/2022/07/duarte-armas-2-e1657874531667.png"
+									alt="Duarte d’Armas e os seus debuxos">
+								<figcaption>Duarte d’Armas e os seus “debuxos”</figcaption>
+							</figure>
+
+							<!-- DIREITA – grande -->
+							<figure class="large">
+								<img src="https://aldeiashistoricasdeportugal.com/wp-content/uploads/2019/01/rascunho-automatico-212.jpg"
+									alt="Casa Brasonada">
+								<figcaption>Casa Brasonada</figcaption>
+							</figure>
+						</div>
+					</section>
+
+					<!-- GALERIA -->
+					<section id="villageGallery" class="page-section slideshow-container slideshow-almeida">
+
+						<div class="slideshow-caption">
+							<h3>Pontos turísticos de Almeida</h3>
+							<p class="history-text">
+								Fortaleza abaluartada, revelins, portas históricas e património militar
+								que marcaram a história da vila.
+							</p>
+						</div>
+
+						<div class="aldeiaSlides-container"></div>
+
+						<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+						<a class="next" onclick="plusSlides(1)">&#10095;</a>
+					</section>
+				</div>
+
+				<!-- ===== SIDEBAR ===== -->
+				<aside class="page-sidebar">
+
+					<div id="previsao" class="page-section"></div>
+
+					<!-- ONDE FICAR / COMER -->
+					<div class="page-section village-links">
+						<h2 class="section-title">Planear visita</h2>
+
+						<div class="links-grid">
+							<a class="visit-link"
+								href="https://www.visitportugal.com/pt-pt/search/site?regioes=118&context=490&localidades=122"
+								target="_blank">
+								🏨 Onde ficar
+							</a>
+
+							<a class="visit-link"
+								href="https://www.visitportugal.com/pt-pt/search/site?regioes=118&context=405&localidades=122"
+								target="_blank">
+								🍽 Onde comer
+							</a>
+						</div>
+					</div>
+
+					<div id="mapa" class="page-section">
+						<iframe src="https://www.google.com/maps?q=Almeida&output=embed" loading="lazy"></iframe>
+					</div>
+				</aside>
+			</section>
+		</section>
+	</main>
+
+	<!-- FOOTER -->
+	<footer class="bottomPage">
+		<em> &copy; 2025 Vanessa Pereira </em>
+	</footer>
+</body>
+
+</html>

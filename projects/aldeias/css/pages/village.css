@@ -1,0 +1,344 @@
+/* =====================================================
+   HEADER DA ALDEIA
+===================================================== */
+
+.village-header {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.village-header h1 {
+    font-size: 42px;
+    margin-bottom: 14px;
+    color: var(--primary-color);
+}
+
+/* =====================================================
+   BOTÕES (TABS)
+===================================================== */
+
+.village-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.village-buttons .button {
+    background: transparent;
+    padding: 6px 16px;
+    font-size: 15px;
+    border-radius: 10px;
+    font-weight: 600;
+
+    color: var(--primary-color);
+    border: 2px solid rgba(193, 163, 98, 0.4);
+    transition: all 0.25s ease;
+}
+
+.village-buttons .button:hover {
+    background-color: rgba(193, 163, 98, 0.15);
+}
+
+.village-buttons .button.active {
+    background-color: rgba(193, 163, 98, 0.25);
+    box-shadow: inset 0 0 0 2px var(--primary-color);
+}
+
+/* =====================================================
+   TEXTO BASE
+===================================================== */
+
+.about p,
+.history-text {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #1f2933;
+}
+
+.history-text {
+    margin-bottom: 12px;
+    margin: auto 20px;
+}
+
+.history-flex {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.history-text p {
+	margin-bottom: 16px;
+}
+
+.history-text p:last-child {
+	margin-bottom: 0;
+}
+
+/* =====================================================
+   SOBRE – IMAGEM
+===================================================== */
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.image-wrapper {
+    background: #1f2933;
+    padding: 6px;
+    border-radius: 18px;
+}
+
+.image-wrapper img {
+    display: block;
+    width: 100%;
+    border-radius: 14px;
+}
+
+/* =====================================================
+   HISTÓRIA – TEXTO + IMAGENS (FLEXBOX)
+===================================================== */
+
+.history-block {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding: 16px 0;
+}
+
+/* inverter lado (imagem à direita) */
+.history-block.reverse {
+    flex-direction: row-reverse;
+}
+
+.history-text {
+    flex: 1;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #1f2933;
+}
+
+.history-image {
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+/* =====================================================
+   VARIAÇÕES DE IMAGEM
+===================================================== */
+
+/* ESQUERDA — CÍRCULO */
+.history-image.esquerda {
+    width: 260px;
+    height: 260px;
+    clip-path: circle(50%);
+}
+
+/* DIREITA — ELIPSE */
+.history-image.direita {
+    width: 260px;
+    height: 260px;
+    clip-path: ellipse(50% 45%);
+}
+
+/* POLÍGONO */
+.history-image.esquerda-poligono {
+    width: 280px;
+    height: 360px;
+
+    clip-path: polygon(50% 0%, 85% 12%, 100% 40%, 82% 85%,
+            50% 100%, 18% 85%, 0% 40%, 15% 12%);
+}
+
+
+/* =====================================================
+   HISTÓRIA – IMAGEM DE FUNDO
+===================================================== */
+
+.history-image-bg {
+    min-height: 320px;
+    padding: 28px;
+    border-radius: 22px;
+    margin-top: 16px;
+    background-size: cover;
+    background-position: center;
+}
+
+.history-overlay {
+    background: rgba(248, 249, 251, 0.92);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+    border-radius: 16px;
+    padding: 24px;
+    max-width: 720px;
+    margin: auto;
+}
+
+/* =====================================================
+   HISTÓRIA – IMAGEM DE FUNDO (ALDEIAS)
+===================================================== */
+
+.history-image-bg.almeida {
+    background-image: url("../../pages/almeida/images/almeida5.jpg");
+}
+
+.history-image-bg.castelo-rodrigo {
+    background-image: url("../../pages/castelo_rodrigo/images/castelo_rodrigo5.jpg");
+}
+
+.history-image-bg.linhares-beira {
+    background-image: url("../../pages/linhares_beira/images/linhares5.jpg");
+}
+
+.history-image-bg.marialva {
+    background-image: url("../../pages/marialva/images/marialva5.jpg");
+}
+
+.history-image-bg.monsanto {
+    background-image: url("../../pages/monsanto/images/monsanto5.jpg");
+}
+
+/* =====================================================
+   O QUE VER
+===================================================== */
+.infos-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 24px;
+    align-items: stretch;
+}
+
+/* FIGURE BASE */
+.infos-grid figure {
+    background: #fff;
+    padding: 16px;
+    border-radius: 18px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 12px;
+
+    text-align: center;
+}
+
+/* IMAGENS */
+.infos-grid img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 14px;
+    display: block;
+}
+
+/* LEGENDAS */
+.infos-grid figcaption {
+    font-weight: 600;
+    font-size: 15px;
+    color: #1f2933;
+}
+
+/* ESQUERDA – pequenas */
+.infos-grid .small {
+    grid-column: 1;
+}
+
+.infos-grid .small img {
+    height: 300px;
+}
+
+/* DIREITA – grande */
+.infos-grid .large {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+}
+
+.infos-grid .large img {
+    flex: 1;
+    min-height: 0;
+}
+
+/* =====================================================
+   LINKS – ONDE FICAR / ONDE COMER
+===================================================== */
+
+.links-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-top: 16px;
+}
+
+.visit-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 14px;
+    border-radius: 14px;
+
+    font-weight: 600;
+    font-size: 16px;
+
+    color: var(--primary-color);
+    background: rgba(193, 163, 98, 0.12);
+    border: 1px solid rgba(193, 163, 98, 0.35);
+
+    text-decoration: none;
+    text-align: center;
+
+    transition: all 0.25s ease;
+}
+
+.visit-link:hover {
+    background: rgba(193, 163, 98, 0.28);
+    transform: translateY(-2px);
+}
+
+/* =====================================================
+   PREVISÃO METEOROLÓGICA
+===================================================== */
+
+#previsao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+#previsao h4,
+.previsao-titulo {
+    background: #eaf6ff;
+    color: #1a7ec8;
+
+    padding: 10px 18px;
+    border-radius: 999px;
+
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+
+#previsao table {
+    border-collapse: collapse;
+}
+
+#previsao td {
+    padding: 12px 18px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* =====================================================
+   MAPA
+===================================================== */
+
+#mapa iframe {
+    width: 100%;
+    height: 350px;
+    border-radius: 18px;
+    border: none;
+}

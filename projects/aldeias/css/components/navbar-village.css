@@ -1,0 +1,86 @@
+/* =========================
+   NAVBAR DAS ALDEIAS
+========================= */
+.aldeias-nav {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+
+    height: 72px;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(6px);
+
+    display: flex;
+    align-items: center;
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 14px;
+}
+
+.aldeias-menu {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 24px;
+
+    display: flex;
+    align-items: center;
+    gap: 24px;
+
+    list-style: none;
+}
+
+.aldeias-menu a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-weight: 500;
+}
+
+.aldeias-menu a:hover {
+    text-decoration: underline;
+}
+
+/* marca */
+.aldeias-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-right: 30px;
+    font-weight: 600;
+}
+
+/* CONTROLO DA IMAGEM */
+.aldeias-brand img {
+    height: 40px;
+    width: auto;
+    display: block;
+}
+
+/* empurra o link para a direita */
+.aldeias-back {
+    margin-left: 142px;
+}
+
+/* estilo do link */
+.aldeias-back a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-weight: 500;
+}
+
+.aldeias-back a:hover {
+    text-decoration: underline;
+}
+
+.aldeias-brand-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    text-decoration: none;
+    color: inherit;
+    /* mantém a cor atual */
+}
+
+.aldeias-brand-link:hover {
+    opacity: 0.85;
+}

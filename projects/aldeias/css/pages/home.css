@@ -1,0 +1,65 @@
+/* =====================================================
+   HOME – LAYOUT ESPECÍFICO
+===================================================== */
+
+.homepage {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+/* =====================================================
+   HOMEPAGE GRID
+===================================================== */
+
+.homepage-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 28px;
+    padding: 0 32px;
+    align-items: start;
+}
+
+/* =====================================================
+   METEOROLOGIA – HOME
+===================================================== */
+
+.weather-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.weather-display {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 18px 22px;
+    border-radius: 14px;
+
+    color: var(--primary-color);
+
+    max-width: 420px;
+    max-height: 500px;
+    overflow-y: auto;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.weather-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
+    margin: 8px 0;
+}
+
+.weather-text {
+    text-align: left;
+    line-height: 1.4;
+    min-width: 90px;
+}
+
+.weather-display h3 {
+    text-align: center;
+    margin: 10px 0 6px;
+}

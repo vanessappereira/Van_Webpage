@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+	<!-- BASE -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Aldeias Históricas</title>
+	<link rel="icon" href="images/logo.png">
+
+	<!-- CSS ESPECÍFICO DAS ALDEIAS -->
+	<link rel="stylesheet" href="css/main.css">
+
+	<!-- JS ESPECÍFICO DAS ALDEIAS -->
+	<script type="module" src="js/main.js"></script>
+</head>
+
+<body class="aldeias-page" data-village="Homepage">
+
+	<!-- ========= NAVBAR DAS ALDEIAS ========= -->
+	<nav class="aldeias-nav">
+		<ul class="aldeias-menu">
+			<!-- LOGO -->
+			<li class="aldeias-brand active">
+				<img src="images/castle.svg" alt="Aldeias Históricas">
+				<span>Aldeias Históricas</span>
+			</li>
+
+			<!-- ALDEIAS -->
+			<li><a href="pages/almeida/index.html">Almeida</a></li>
+			<li><a href="pages/castelo_rodrigo/index.html">Castelo Rodrigo</a></li>
+			<li><a href="pages/linhares_beira/index.html">Linhares da Beira</a></li>
+			<li><a href="pages/marialva/index.html">Marialva</a></li>
+			<li><a href="pages/monsanto/index.html">Monsanto</a></li>
+
+			<!-- VOLTAR À HOMEPAGE -->
+			<li class="aldeias-back">
+				<a href="../../index.html">Voltar à Homepage</a>
+			</li>
+
+		</ul>
+	</nav>
+
+	<!-- ========= CONTEÚDO PRINCIPAL ========= -->
+	<main class="page-container">
+		<section class="about">
+
+			<section class="page-grid homepage-grid">
+
+				<!-- ===== COLUNA ESQUERDA ===== -->
+				<section class="slideshow-container homepage">
+
+					<div class="aldeiaSlides">
+						<div class="slideshow-caption">
+							<h3>Almeida</h3>
+							<p>Fortaleza abaluartada e património militar único</p>
+						</div>
+
+						<div class="slide-frame">
+							<a href="pages/almeida/index.html">
+								<img src="pages/almeida/images/o-cacador.jpg" alt="Almeida – O Caçador">
+							</a>
+						</div>
+					</div>
+
+					<div class="aldeiaSlides">
+						<div class="slideshow-caption">
+							<h3>Castelo Rodrigo</h3>
+							<p>Aldeia medieval com vista sobre o Douro</p>
+						</div>
+
+						<div class="slide-frame">
+							<a href="pages/castelo_rodrigo/index.html">
+								<img src="pages/castelo_rodrigo/images/taverna-da-matilde.jpg" alt="Castelo Rodrigo">
+							</a>
+						</div>
+					</div>
+
+					<div class="aldeiaSlides">
+						<div class="slideshow-caption">
+							<h3>Linhares da Beira</h3>
+							<p>Castelo, tradição e paisagem serrana</p>
+						</div>
+
+						<div class="slide-frame">
+							<a href="pages/linhares_da_beira/index.html">
+								<img src="pages/linhares_beira/images/Cova-da-Loba.jpg" alt="Linhares da Beira">
+							</a>
+						</div>
+					</div>
+
+					<div class="aldeiaSlides">
+						<div class="slideshow-caption">
+							<h3>Marialva</h3>
+							<p>Ruínas medievais e memória histórica</p>
+						</div>
+
+						<div class="slide-frame">
+							<a href="pages/marialva/index.html">
+								<img src="pages/marialva/images/PedeCabra.jpg" alt="Marialva">
+							</a>
+						</div>
+					</div>
+
+					<div class="aldeiaSlides">
+						<div class="slideshow-caption">
+							<h3>Monsanto</h3>
+							<p>A aldeia mais portuguesa de Portugal</p>
+						</div>
+
+						<div class="slide-frame">
+							<a href="pages/monsanto/index.html">
+								<img src="pages/monsanto/images/CasadaVelhaFonte.jpg" alt="Monsanto">
+							</a>
+						</div>
+					</div>
+
+					<!-- BOTÕES -->
+					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+					<a class="next" onclick="plusSlides(1)">&#10095;</a>
+				</section>
+
+				<!-- ===== SIDEBAR ===== -->
+				<aside class="page-sidebar">
+					<div id="weatherDisplay" class="weather-display"></div>
+				</aside>
+			</section>
+		</section>
+	</main>
+
+	<!-- FOOTER -->
+	<footer class="bottomPage">
+		<em> &copy; 2025 Vanessa Pereira </em>
+	</footer>
+
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+/* CSS GLOBAL DO PORTFÓLIO */
+@import url("../../../public/css/base/base.css");
+@import url("../../../public/css/components/titles.css");
+
+/* BASE */
+@import url("base/page-layout.css");
+
+/* COMPONENTES */
+@import url("components/navbar-village.css");
+@import url("components/slideshow.css");
+
+/* PÁGINAS */
+@import url("pages/home.css");
+@import url("pages/village.css");
