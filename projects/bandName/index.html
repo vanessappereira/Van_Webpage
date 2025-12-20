@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <!-- BASE -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Vanessa Portfólio | Band Name </title>
+
+    <!-- Icon -->
+    <link rel="icon" href="../../public/icons/butterfly.svg" type="image/svg+xml">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../public/css/main.css">
+    <link rel="stylesheet" href="css/bandStyles.css">
+
+</head>
+
+<body>
+    <!-- ========= NAVBAR ========= -->
+    <nav class="navbar">
+        <ul class="navbar-menu">
+            <!-- LEFT -->
+            <li class="navbar-left">
+                <a href="../../index.html">Home</a>
+<a href="../../about.html">About Me</a>                <a href="mailto:v.pereira.work@gmail.com" class="contact">
+                    Contact Me
+                </a>
+            </li>
+
+            <!-- CENTER -->
+            <li id="MyClockDisplay" class="clock"></li>
+
+            <!-- RIGHT -->
+            <li class="navbar-right">
+                <a href="https://www.linkedin.com/in/vanessa-pereira/" class="linkedin-btn" target="_blank"
+                    rel="noopener">
+                    <img src="../../public/icons/linkedin-logo.svg" alt="LinkedIn" class="linkedin-logo">
+                    <span>LinkedIn</span>
+                </a>
+
+                <a href="https://github.com/vanessappereira" class="github-btn" target="_blank" rel="noopener">
+                    <img src="../../public/icons/github-logo.svg" alt="GitHub" class="github-logo">
+                    <span>GitHub</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- ========= CONTEÚDO PRINCIPAL ========= -->
+    <main class="page-container">
+        <h1 class="page-title">Welcome to the Band Generator 🤟</h1>
+
+        <section class="band-generator">
+            <form id="generateNameForm" class="formBand">
+                <input type="submit" value="Generate Name" class="button-band">
+            </form>
+
+            <!-- RESULTADO -->
+            <div id="bandResult" class="band-result"></div>
+
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p class="footer-content">&copy; 2025 Vanessa Pereira</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="./../../public/js/clock.js" defer></script>
+    <script src="js/bandName.js" defer></script>
+
+</body>
+
+</html>
