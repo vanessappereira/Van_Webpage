@@ -1,37 +1,16 @@
-# Project Root
-.architect
+# Environment
 .env
-*.code-workspace
 
-# Build and Distribution
-build/
-dist/
-
-# Bootstrap Files
-bootstrap.css
-bootstrap.js
-bootstrap.json
-bootstrap.jsonp
-
-# Configuration Files
-classic.json
-classic.jsonp
-modern.json
-modern.jsonp
-aboutMe.json
-
-# Resources
-resources/
-    sass/
-        .sass-cache/
-    .arch-internal-preview.css
-
-# External Libraries
-ext/
+# Node
 node_modules/
 
-# Miscellaneous
-other stuff/
-adminIndex.html
-languages.txt
-.vs
+# Build folders
+dist/
+build/
+
+# Editor
+*.code-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
