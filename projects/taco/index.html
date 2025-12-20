@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <!-- BASE -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Vanessa Portfólio | Taco Town </title>
+
+    <!-- Icon -->
+    <link rel="icon" href="../../public/icons/butterfly.svg" type="image/svg+xml">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../public/css/main.css">
+    <link rel="stylesheet" href="css/tacoStyles.css">
+
+</head>
+
+<body>
+    <!-- ========= NAVBAR ========= -->
+    <nav class="navbar">
+        <ul class="navbar-menu">
+            <!-- LEFT -->
+            <li class="navbar-left">
+                <a href="../../index.html">Home</a>
+<a href="../../about.html">About Me</a>                <a href="mailto:v.pereira.work@gmail.com" class="contact">
+                    Contact Me
+                </a>
+            </li>
+
+            <!-- CENTER -->
+            <li id="MyClockDisplay" class="clock"></li>
+
+            <!-- RIGHT -->
+            <li class="navbar-right">
+                <a href="https://www.linkedin.com/in/vanessa-pereira/" class="linkedin-btn" target="_blank"
+                    rel="noopener">
+                    <img src="../../public/icons/linkedin-logo.svg" alt="LinkedIn" class="linkedin-logo">
+                    <span>LinkedIn</span>
+                </a>
+
+                <a href="https://github.com/vanessappereira" class="github-btn" target="_blank" rel="noopener">
+                    <img src="../../public/icons/github-logo.svg" alt="GitHub" class="github-logo">
+                    <span>GitHub</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- ========= CONTEÚDO PRINCIPAL ========= -->
+    <main class="page-container">
+        <h1 class="page-title">🌮 Taco Town 🌮</h1>
+
+        <section>
+            <form id="recipeForm" class="buttons">
+                <button type="button" data-choice="chicken" aria-label="Chicken Taco">
+                    <img src="images/chicken.png" alt="Chicken taco ingredient">
+                </button>
+
+                <button type="button" data-choice="beef" aria-label="Beef Taco">
+                    <img src="images/beef.png" alt="Beef taco ingredient">
+                </button>
+
+                <button type="button" data-choice="fish" aria-label="Fish Taco">
+                    <img src="images/fish.png" alt="Fish taco ingredient">
+                </button>
+            </form>
+            <div id="recipeContainer" class="hidden">
+                <h2 class="pick-ingredient">Pick your favourite taco ingredient 👆</h2>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p class="footer-content">&copy; 2025 Vanessa Pereira</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../../public/js/clock.js" charset="utf-8" defer></script>
+    <script src="js/tacoRecipes.js" defer></script>
+</body>
+
+</html>
