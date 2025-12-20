@@ -38,8 +38,8 @@ Cada projeto contém o seu próprio ficheiro README.md, descrevendo em detalhe a
 | Projeto | Descrição | Tecnologias | Documentação |
 |-------|-----------|-------------|---------------|
 | 🏰 Aldeias Históricas | Aplicação web informativa sobre as Aldeias Históricas de Portugal, com conteúdos multimédia e dados meteorológicos. | HTML5, CSS3, JavaScript, API IPMA | [README](projects/aldeias/README.md) |
-| 🎸 Band Name Generator | Gerador aleatório de nomes de bandas com base em dados JSON. | HTML5, CSS3, JavaScript, Fetch API, JSON | [README](projects/bandName/README.md) |
-| 🎲 Dice Roller | Simulador de lançamento de dois dados com resultado automático. | HTML5, CSS3, JavaScript | [README](projects/dice/README.md) |
-| 🥁 Drum Kit | Simulador de bateria interativa controlada por teclado e rato. | HTML5, CSS3, JavaScript, Audio API | [README](projects/drum/README.md) |
-| 🎮 Simon Says | Implementação do jogo Simon Says com progressão de níveis e feedback sonoro. | HTML5, CSS3, JavaScript | [README](projects/simonSays/README.md) |
-| 🌮 Taco Town | Aplicação interativa de receitas baseada na seleção do utilizador e dados JSON. | HTML5, CSS3, JavaScript, JSON | [README](projects/taco/README.md) |
+| 🎸 Band Name Generator | Gerador aleatório de nomes de bandas com base em dados JSON. | HTML5, CSS3, JavaScript, Fetch API, JSON | [README](projects/bandName/README.MD) |
+| 🎲 Dice Roller | Simulador de lançamento de dois dados com resultado automático. | HTML5, CSS3, JavaScript | [README](projects/dice/README.MD) |
+| 🥁 Drum Kit | Simulador de bateria interativa controlada por teclado e rato. | HTML5, CSS3, JavaScript, Audio API | [README](projects/drum/README.MD) |
+| 🎮 Simon Says | Implementação do jogo Simon Says com progressão de níveis e feedback sonoro. | HTML5, CSS3, JavaScript | [README](projects/simonSays/README.MD) |
+| 🌮 Taco Town | Aplicação interativa de receitas baseada na seleção do utilizador e dados JSON. | HTML5, CSS3, JavaScript, JSON | [README](projects/taco/README.MD) |
