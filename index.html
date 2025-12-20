@@ -1,134 +1,145 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="pt">
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Page Name -->
+
     <title>Vanessa Portfólio</title>
-    <!-- Icon -->
+
     <link rel="icon" href="public/icons/butterfly.svg" type="image/svg+xml">
-    <!-- CSS -->
-    <link rel="stylesheet" href="public/css/templateStyles.css">
-    <link rel="stylesheet" href="public/css/indexStyles.css">
-    <link rel="stylesheet" href="public/css/clock.css">
+
+    <link rel="stylesheet" href="public/css/main.css">
 </head>
 
 <body>
-    <!-- Horizontal Navbar -->
-    <header>
-        <nav>
-            <ul class="navbar">
-                <li><a class="active" id="Homepage" aria-current="page" href="index.html">Home</a></li>
-                <li><a id="aboutMe" href="aboutMe.html">About Me</a></li>
-                <li>
-                    <a href="mailto:v.pereira.work@gmail.com" class="contact"
-                        aria-label="Contact Vanessa Pereira via email">Contact Me</a>
-                </li>
-                <li id="MyClockDisplay" class="clock" onload="showTime()"></li>
-                <div class="navbar-right">
+    <!-- ========= NAVBAR ========= -->
+    <nav class="navbar">
+        <ul class="navbar-menu">
+            <!-- LEFT -->
+            <li class="navbar-left">
+                <a href="index.html">Home</a>
+                <a href="about.html">Sobre mim</a>
+                <a href="mailto:v.pereira.work@gmail.com" class="contact">
+                    Contacto </a>
+            </li>
+
+            <!-- CENTER -->
+            <li id="MyClockDisplay" class="clock"></li>
+
+            <!-- RIGHT -->
+            <li class="navbar-right">
+                <a href="https://www.linkedin.com/in/vanessa-pereira/" class="linkedin-btn" target="_blank"
+                    rel="noopener">
+                    <img src="public/icons/linkedin-logo.svg" alt="LinkedIn" class="linkedin-logo">
+                    <span>LinkedIn</span>
+                </a>
+
+                <a href="https://github.com/vanessappereira" class="github-btn" target="_blank" rel="noopener">
+                    <img src="public/icons/github-logo.svg" alt="GitHub" class="github-logo">
+                    <span>GitHub</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- ========= CONTEÚDO PRINCIPAL ========= -->
+    <main class="page-container">
+        <h1 class="page-title">Vanessa Homepage</h1>
+
+        <section class="homepage-projects">
+            <!-- LEFT SIDE -->
+            <section class="left-side">
+                <div class="profile-flip">
+                    <div class="profile-inner">
+                        <img src="public/images/profilePic1.png" alt="Vanessa profile photo" class="profilePic front"
+                            loading="lazy">
+
+                        <img src="public/images/profilePic2.png" alt="Vanessa alternate profile photo"
+                            class="profilePic back" loading="lazy">
+                    </div>
+                </div>
+            </section>
+
+            <!-- RIGHT SIDE -->
+            <section class="right-side">
+                <h2 class="section-title">Projetos</h2>
+
+                <ul class="projects-list cards">
                     <li>
-                        <a href="https://www.linkedin.com/in/vanessa-pereira/" class="linkedin-btn"
-                            aria-label="Visit Vanessa Pereira's LinkedIn profile" target="_blank"
-                            rel="noopener noreferrer">
-                            <img src="public/icons/linkedin-logo.svg" alt="LinkedIn Logo" class="linkedin-logo">
-                            <p>LinkedIn</p>
+                        <a href="projects/drum/index.html" class="project-card">
+                            <div class="card-content">
+                                <img src="public/icons/programming.svg" class="card-icon" alt="" aria-hidden="true">
+                                <h3 class="card-title">Drum Kit Project</h3>
+                                <p class="card-tech">JavaScript • DOM Events • Audio API</p>
+                            </div>
                         </a>
                     </li>
+
                     <li>
-                        <a href="https://github.com/vanessappereira" class="github-btn"
-                            aria-label="Visit Vanessa Pereira's GitHub profile" target="_blank"
-                            rel="noopener noreferrer">
-                            <img src="public/icons/github-logo.svg" alt="GitHub Logo" class="github-logo">
-                            <p>GitHub Repo</p>
+                        <a href="projects/taco/index.html" class="project-card">
+                            <div class="card-content">
+                                <img src="public/icons/programming.svg" class="card-icon" alt="" aria-hidden="true">
+                                <h3 class="card-title">Taco Town Recipes</h3>
+                                <p class="card-tech">JavaScript • Fetch API • Dynamic Content</p>
+                            </div>
                         </a>
                     </li>
-                </div>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <!-- Header Centered -->
-        
 
-        <!-- Main Content -->
-        <div class="container">
-            <div class="left-side">
-                <div class="image-placeholder">
-                    <img src="public/images/profile.png" alt="Vanessa" class="image" loading="lazy">
-                </div>
-            </div>
-            <div class="right-side">
-                <div class="title">
-                    <h1>
-                        Vanessa Homepage
-                    </h1>
-                </div>
-                <button class="cssbuttons-io" id="drumButton">
-                    <a aria-label="Drum Kit Project">
-                        <span>
-                            <img src="public/icons/programming.svg" class="button-icon" alt="programming icon"
-                                width="24" height="24">
-                            Drum Kit Project
-                        </span>
-                    </a>
-                </button>
+                    <li>
+                        <a href="projects/dice/index.html" class="project-card">
+                            <div class="card-content">
+                                <img src="public/icons/programming.svg" class="card-icon" alt="" aria-hidden="true">
+                                <h3 class="card-title">Dice Game</h3>
+                                <p class="card-tech">JavaScript • DOM Manipulation • Random Logic</p>
+                            </div>
+                        </a>
+                    </li>
 
-                <button class="cssbuttons-io" id="tacoButton">
-                    <a aria-label="Taco Town Recipes">
-                        <span>
-                            <img src="public/icons/programming.svg" class="button-icon" alt="programming icon"
-                                width="24" height="24">Taco Town Recipes
-                        </span>
-                    </a>
-                </button>
-                <button class="cssbuttons-io" id="diceButton">
-                    <a aria-label="Dice Game Project">
-                        <span>
-                            <img src="public/icons/programming.svg" class="button-icon" alt="programming icon"
-                                width="24" height="24">
-                            Dice Game
-                        </span>
-                    </a>
-                </button>
-                <button class="cssbuttons-io" id="bandButton">
-                    <a aria-label="Band Generator Project">
-                        <span>
-                            <img src="public/icons/programming.svg" class="button-icon" alt="programming icon"
-                                width="24" height="24">
-                            Band Generator Project
-                        </span>
-                    </a>
-                </button>
-                <button class="cssbuttons-io" id="simonButton">
-                    <a aria-label="Simon Says Game">
-                        <span>
-                            <img src="public/icons/programming.svg" class="button-icon" alt="programming icon"
-                                width="24" height="24">
-                            Simon Says Game
-                        </span>
-                    </a>
-                </button>
-                <button class="cssbuttons-io" id="aldeiasHistoricas">
-                    <a aria-label="Aldeias Historicas">
-                        <span>
-                            <img src="public/icons/programming.svg" class="button-icon" alt="programming icon"
-                                width="24" height="24">
-                                Aldeias Históricas
-                        </span>
-                    </a>
-                </button>
-            </div>
-        </div>
+                    <li>
+                        <a href="projects/bandName/index.html" class="project-card">
+                            <div class="card-content">
+                                <img src="public/icons/programming.svg" class="card-icon" alt="" aria-hidden="true">
+                                <h3 class="card-title">Band Generator Project</h3>
+                                <p class="card-tech">JavaScript • JSON • Random Generator</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="projects/simonSays/index.html" class="project-card">
+                            <div class="card-content">
+                                <img src="public/icons/programming.svg" class="card-icon" alt="" aria-hidden="true">
+                                <h3 class="card-title">Simon Says Game</h3>
+                                <p class="card-tech">JavaScript • jQuery • Memory Game</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="projects/aldeias/index.html" class="project-card">
+                            <div class="card-content">
+                                <img src="public/icons/programming.svg" class="card-icon" alt="" aria-hidden="true">
+                                <h3 class="card-title">Aldeias Históricas</h3>
+                                <p class="card-tech">
+                                    HTML • CSS • JavaScript • API IPMA • Responsive Layout
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+
+                </ul>
+            </section>
+        </section>
     </main>
+    
+    <!-- Footer -->
     <footer>
         <p class="footer-content">&copy; 2025 Vanessa Pereira</p>
     </footer>
+
     <!-- JavaScript -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ejs/3.1.6/ejs.min.js"></script>
-    <script src="public/js/linksScript.js" charset="utf-8" defer></script>
-    <script src="public/js/clock.js" charset="utf-8" defer></script>
+    <script src="public/js/clock.js" defer></script>
 </body>
 
 </html>

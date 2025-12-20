@@ -1,27 +1,17 @@
-function showTime() {
-    var date = new Date();
-    var h = date.getHours(); // 0 - 23
-    var m = date.getMinutes(); // 0 - 59
-    var session = "AM";
+document.addEventListener('DOMContentLoaded', () => {
+    const clockElement = document.getElementById('MyClockDisplay');
 
-    if (h == 0) {
-        h = 12;
+    if (!clockElement) return;
+
+    function updateClock() {
+        const now = new Date();
+
+        let hours = now.getHours().toString().padStart(2, '0');
+        const minutes = now.getMinutes().toString().padStart(2, '0');
+
+        clockElement.textContent = `${hours}:${minutes}`;
     }
 
-    if (h > 12) {
-        h = h - 12;
-        session = "PM";
-    }
-
-    h = (h < 10) ? "0" + h : h;
-    m = (m < 10) ? "0" + m : m;
-
-    var time = h + ":" + m + " " + session;
-    document.getElementById("MyClockDisplay").innerText = time;
-    document.getElementById("MyClockDisplay").textContent = time;
-
-    setTimeout(showTime, 1000);
-
-}
-
-showTime();
+    updateClock();
+    setInterval(updateClock, 1000);
+});

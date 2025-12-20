@@ -1,0 +1,21 @@
+/* =====================================================
+   MAIN STYLESHEET
+   Projeto: Portfolio / Website Pessoal
+   Autor: Vanessa Pereira
+   ===================================================== */
+
+/* ---------- BASE ---------- */
+@import url("base/base.css");
+@import url("base/page-layout.css");
+@import url("base/typography.css");
+
+/* ---------- COMPONENTS ---------- */
+@import url("components/cards.css");
+@import url("components/icons.css");
+@import url("components/navbar.css");
+@import url("components/profile.css");
+@import url("components/titles.css");
+
+/* ---------- PAGES ---------- */
+@import url("pages/index.css");
+@import url("pages/about.css");

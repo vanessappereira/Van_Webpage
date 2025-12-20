@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Vanessa Portfólio</title>
+
+    <link rel="icon" href="public/icons/butterfly.svg" type="image/svg+xml">
+
+    <link rel="stylesheet" href="public/css/main.css">
+</head>
+
+<body>
+
+    <!-- ========= NAVBAR ========= -->
+    <nav class="navbar">
+        <ul class="navbar-menu">
+            <!-- LEFT -->
+            <li class="navbar-left">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Me</a>
+                <a href="mailto:v.pereira.work@gmail.com" class="contact">
+                    Contact Me
+                </a>
+            </li>
+
+            <!-- CENTER -->
+            <li id="MyClockDisplay" class="clock"></li>
+
+            <!-- RIGHT -->
+            <li class="navbar-right">
+                <a href="https://www.linkedin.com/in/vanessa-pereira/" class="linkedin-btn" target="_blank"
+                    rel="noopener">
+                    <img src="public/icons/linkedin-logo.svg" alt="LinkedIn" class="linkedin-logo">
+                    <span>LinkedIn</span>
+                </a>
+
+                <a href="https://github.com/vanessappereira" class="github-btn" target="_blank" rel="noopener">
+                    <img src="public/icons/github-logo.svg" alt="GitHub" class="github-logo">
+                    <span>GitHub</span>
+                </a>
+            </li>
+
+        </ul>
+    </nav>
+
+    <!-- ========= CONTEÚDO PRINCIPAL ========= -->
+    <main class="page-container">
+        <section class="about">
+
+            <nav class="about-tabs">
+                <button class="about-tab active" data-section="Sobre Mim">Sobre Mim</button>
+                <button class="about-tab" data-section="Formação">Formação</button>
+                <button class="about-tab" data-section="Experiência Profissional">Experiência Profissional</button>
+                <button class="about-tab" data-section="Competências">Competências</button>
+            </nav>
+
+            <div id="info" class="about-content"></div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p class="footer-content">&copy; 2025 Vanessa Pereira</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="public/js/clock.js" defer></script>
+    <script src="public/js/about.js" defer></script>
+</body>
+
+</html>

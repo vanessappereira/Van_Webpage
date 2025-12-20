@@ -1,0 +1,55 @@
+/* =====================================================
+   PAGE LAYOUT – BASE GLOBAL
+   Usado em TODAS as páginas
+===================================================== */
+/* =====================================================
+    ROOT VARIABLES
+ ===================================================== */
+:root {
+    --font-base: "Roboto", sans-serif;
+
+    --background-image: url("../../images/background.png");
+
+    --primary-color: #3cc5f3;
+    --secondary-color: #A06AC6;
+    --highlight-color: #DA0463;
+
+    --text-color: #222;
+    --white: #ffffff;
+}
+
+/* ===========================
+   BODY E FUNDO
+=========================== */
+
+body {
+    margin: 30px;
+
+    font-family: var(--font-base);
+    color: var(--text-color);
+    text-align: center;
+
+    background-image: var(--background-image);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.page-container {
+    margin: 28px 0;
+    padding: 22px;
+    border-radius: 24px;
+
+    box-shadow:
+        0 20px 40px rgba(0, 0, 0, 0.18),
+        0 1px 0 rgba(255, 255, 255, 0.4) inset;
+}
+
+/* ========= FOOTER ========= */
+footer {
+    margin-top: 40px;
+    padding: 16px 0;
+    font-size: 0.9rem;
+    text-align: center;
+    color: #ccc;
+}

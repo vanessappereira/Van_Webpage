@@ -1,0 +1,70 @@
+/* =====================================================
+   PROJECTS LIST
+===================================================== */
+.projects-list {
+    list-style: none;
+    margin: 20px;
+    padding: 0;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+}
+
+/* =====================================================
+   PROJECT CARD
+===================================================== */
+.project-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    min-height: 120px;
+
+    border-radius: 20px;
+    text-decoration: none;
+    color: #fff;
+
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.35);
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 8px;
+}
+
+.card-content h3 {
+    margin: 15px 0 5px;
+    font-size: 22px;
+}
+
+.card-tech {
+    font-size: 0.9rem;
+    opacity: 0.8;
+    margin-top: 0.3rem;
+}
+
+.project-title {
+    margin-bottom: 20px;
+}
+
+/* =====================================================
+   MOBILE (≤ 768px)
+===================================================== */
+@media (max-width: 900px) {
+    .projects-list {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,165 @@
+{
+  "perfil": [
+    {
+      "_id": "67903f786c42931db767919f",
+      "titulo": "Sobre Mim",
+      "experiencia": "Em 2023, concluí a formação em Java, adquirindo experiência prática como Desenvolvedor Full-Stack ao trabalhar num projeto inovador para um website de cálculo de estruturas de treliças. Nesse projeto, utilizei ferramentas como Stripe, ReactJS, REST API e TypeScript para criar uma área personalizada, permitindo aos utilizadores acederem facilmente aos seus dados e informações. Recentemente, finalizei a formação em Python, onde desenvolvi uma biblioteca de livros, aplicando os conhecimentos adquiridos de forma prática e estruturada.",
+      "descricao": "Apaixonada por desenvolvimento, formada em Java e com experiência prática em Javascript, adquirida durante um estágio como Desenvolvedor Full Stack. Sou uma pessoa proativa, com facilidade de comunicação e trabalho em equipa, sempre disposta a aprender e a enfrentar novos desafios.",
+      "trajetoria_profissional": "Ao longo da minha trajetória profissional, tive a oportunidade de mergulhar numa nova carreira, onde aprendi sobre diferentes culturas e adquiri novas habilidades que enriqueceram tanto a minha vida pessoal como a profissional. Essa experiência também aprimorou a minha fluência em espanhol e em inglês.",
+      "idiomas": [
+        {
+          "lingua": "Português",
+          "nivel": "Nativo"
+        },
+        {
+          "lingua": "Inglês",
+          "nivel": "Avançado"
+        },
+        {
+          "lingua": "Espanhol",
+          "nivel": "Avançado"
+        }
+      ],
+      "linguagens": [
+        {
+          "linguagem": "Java",
+          "nivel": "Básico/Intermédio"
+        },
+        {
+          "linguagem": "Python",
+          "nivel": "Básico"
+        },
+        {
+          "linguagem": "JavaScript",
+          "nivel": "Intermédio"
+        },
+        {
+          "linguagem": "HTML",
+          "nivel": "Intermédio"
+        },
+        {
+          "linguagem": "CSS",
+          "nivel": "Intermédio"
+        }
+      ]
+    }
+  ],
+  "formacao": [
+    {
+      "_id": "67bf4ec3c4a9574bd37c7577",
+      "curso": "Especialização Tecnológica em Sistemas de Informação",
+      "instituicao": "Citeforma Lisboa",
+      "periodoInicial": "2024-06-01T23:00:00.000Z",
+      "periodoTermino": "2025-06-01T23:00:00.000Z"
+    },
+    {
+      "_id": "67bf4f6bc4a9574bd37c757a",
+      "curso": "Java Developer",
+      "instituicao": "ISCTE-UpSkill",
+      "periodoInicial": "2022-05-01T00:00:00.000Z",
+      "periodoTermino": "2023-01-01T00:00:00.000Z"
+    },
+    {
+      "_id": "67bf4fd4c4a9574bd37c757b",
+      "curso": "Limpeza e transformação em Python",
+      "instituicao": "IEFP Amadora",
+      "periodoInicial": "2024-01-01T00:00:00.000Z",
+      "periodoTermino": "2024-01-01T00:00:00.000Z"
+    },
+    {
+      "_id": "67bf5004c4a9574bd37c757d",
+      "curso": "Fundamentos de cibersegurança",
+      "instituicao": "IEFP Sintra",
+      "periodoInicial": "2021-04-01T00:00:00.000Z",
+      "periodoTermino": "2021-09-01T00:00:00.000Z"
+    },
+    {
+      "_id": "67bf50c723d7e13c666cd6ff",
+      "curso": "Técnica de Electrónica de Computadores e Redes",
+      "instituicao": "CINEL",
+      "periodoInicial": "2008-01-01T00:00:00.000Z",
+      "periodoTermino": "2012-01-01T00:00:00.000Z"
+    },
+    {
+      "_id": "67bf50db23d7e13c666cd700",
+      "curso": "Programação em Python",
+      "instituicao": "IEFP Amadora",
+      "periodoInicial": "2022-05-01T00:00:00.000Z",
+      "periodoTermino": "2023-01-01T00:00:00.000Z"
+    }
+  ],
+  "experiencia_profissional": [
+    {
+      "_id": "67bf257340e1a4b4ac0b118e",
+      "empresa": "Teleperformance",
+      "cargo": "Customer Service Adobe",
+      "funcoes": [
+        "Suporte técnico via telefone",
+        "Gerenciamento de licenças",
+        "Assistência remota para resolução de erros de software",
+        "Orientação virada ao cliente nos processos de instalação e configuração"
+      ],
+      "periodoInicial": "2023-11-01T00:00:00.000Z",
+      "periodoTermino": "2023-12-01T00:00:00.000Z"
+    },
+    {
+      "_id": "67bf267c40e1a4b4ac0b118f",
+      "empresa": "Slefty · Estágio",
+      "cargo": "Junior Full Stack Developer",
+      "funcoes": [
+        "Durante o meu estágio como Junior Full Stack Developer, participei de um projeto que visava desenvolver um website dedicado ao cálculo de estruturas de treliça. O principal objetivo deste website era proporcionar aos utilizadores uma área de cliente personalizada, onde pudessem aceder aos seus dados de registo e outras informações relevantes.",
+        "Para alcançar esse objetivo, utilizei diversas ferramentas e tecnologias de programação, incluindo Stripe, ReactJS, REST API e TypeScript, entre outras, contribuindo para a criação de uma experiência de utilizador intuitiva e eficiente."
+      ],
+      "periodoInicial": "2022-11-01T00:00:00.000Z",
+      "periodoTermino": "2023-01-01T00:00:00.000Z"
+    },
+    {
+      "_id": "67bf274040e1a4b4ac0b1190",
+      "empresa": "Teleperformance",
+      "cargo": "IT Service Desk Technician",
+      "funcoes": [
+        "Como técnico de service desk de TI, forneci suporte técnico tanto remoto quanto local, abordando uma variedade de questões relacionadas à tecnologia.",
+        "As minhas responsabilidades incluíram a montagem, instalação e reparação de computadores, além da instalação, manutenção e configuração de sistemas operativos, periféricos, redes locais e aplicações.",
+        "Trabalhei para garantir a eficiência e o bom funcionamento dos equipamentos e sistemas utilizados pelos usuários, contribuindo para a resolução eficaz de problemas e a satisfação dos clientes."
+      ],
+      "periodoInicial": "2018-03-01T00:00:00.000Z",
+      "periodoTermino": "2019-12-01T00:00:00.000Z"
+    },
+    {
+      "_id": "67bf281240e1a4b4ac0b1191",
+      "empresa": "Teleperformance",
+      "cargo": "Technical Support Representative",
+      "funcoes": [
+        "No meu cargo como representante de suporte técnico, prestei assistência a clientes de uma empresa de antivírus, atendendo às suas necessidades por telefone e chat, especialmente no mercado da América Latina.",
+        "Entre as minhas responsabilidades, realizava o gerenciamento de licenças de antivírus e na realização de reembolsos, garantindo a satisfação dos clientes e a resolução eficaz das suas solicitações."
+      ],
+      "periodoInicial": "2017-11-01T00:00:00.000Z",
+      "periodoTermino": "2018-03-01T00:00:00.000Z"
+    },
+    {
+      "_id": "67bf285e40e1a4b4ac0b1192",
+      "empresa": "Teleperformance",
+      "cargo": "Customer Service Representative",
+      "funcoes": [
+        "No meu papel de suporte de TI remoto para os mercados da América Latina, fui responsável pelas resoluções de problemas relacionados a software, como dificuldades de acesso, login, redefinição de senhas, erros e procedimentos de instalação. Gerenciei questões de rede, que incluem a criação e redefinição de utilizadores, assim como os controles de acessos.",
+        "Atuei na gestão e resolução de incidentes de TI, garantindo a continuidade das operações dos usuários e a eficiência dos serviços prestados."
+      ],
+      "periodoInicial": "2014-08-01T00:00:00.000Z",
+      "periodoTermino": "2017-11-01T00:00:00.000Z"
+    },
+    {
+      "_id": "67bf3e9240e1a4b4ac0b1193",
+      "empresa": "Olisipo",
+      "cargo": "Suporte Técnico",
+      "funcoes": [
+        "Gestão de tickets no ServiceNow",
+        "Gestão de contas na AD",
+        "Assistência remota para resolução de incidentes técnicos, ou instalação de programas e certificados",
+        "Manutenção remota de equipamentos"
+      ],
+      "periodoInicial": "2024-03-01T00:00:00.000Z",
+      "periodoTermino": "2024-04-01T00:00:00.000Z"
+    }
+  ],
+  "ultimaAtualizacao": "2025-12-20T02:41:35.341Z"
+}
