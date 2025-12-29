@@ -1,32 +1,36 @@
-/* ===============================
+/* =====================================================
    TACO TOWN – RECIPE LOGIC
-================================ */
-
+===================================================== */
 document.addEventListener("DOMContentLoaded", async () => {
+
+    /* --------------------------------------------------
+       ELEMENTOS DO DOM
+    --------------------------------------------------- */
     const recipeForm = document.getElementById("recipeForm");
     const recipeContainer = document.getElementById("recipeContainer");
 
+    /* --------------------------------------------------
+       ESTADO
+    --------------------------------------------------- */
     let recipes = [];
 
-    /* ===============================
+    /* =====================================================
        LOAD RECIPES
-    ================================= */
-
+    ====================================================== */
     try {
         const response = await fetch("recipe.json");
         recipes = await response.json();
     } catch (error) {
         console.error("Error loading recipes:", error);
         recipeContainer.innerHTML =
-            "<h2 class='pick-ingredient'>Unable to load recipes.</h2>";
+            `<h2 class="pick-ingredient">Unable to load recipes.</h2>`;
         return;
     }
 
-    /* ===============================
+    /* =====================================================
        HANDLE USER SELECTION
-    ================================= */
-
-    recipeForm.addEventListener("click", (event) => {
+    ====================================================== */
+    recipeForm.addEventListener("click", event => {
         const button = event.target.closest("button");
         if (!button) return;
 
@@ -38,19 +42,22 @@ document.addEventListener("DOMContentLoaded", async () => {
 
         if (!recipe) {
             recipeContainer.innerHTML =
-                "<h2 class='pick-ingredient'>Recipe not found.</h2>";
+                `<h2 class="pick-ingredient">Recipe not found.</h2>`;
             return;
         }
 
         displayRecipe(recipe);
     });
 
-    /* ===============================
+    /* =====================================================
        DISPLAY RECIPE
-    ================================= */
-
+    ====================================================== */
     function displayRecipe(recipe) {
         recipeContainer.classList.remove("hidden");
+
+        const toppingsHTML = recipe.ingredients.toppings
+            .map(t => `<li>${t.quantity} of ${t.name}</li>`)
+            .join("");
 
         recipeContainer.innerHTML = `
             <h2 id="recipeTitle">${recipe.name}</h2>
@@ -70,13 +77,7 @@ document.addEventListener("DOMContentLoaded", async () => {
                     – ${recipe.ingredients.salsa.spiciness}
                 </li>
 
-                ${recipe.ingredients.toppings
-                .map(topping => `
-                        <li>
-                            ${topping.quantity} of ${topping.name}
-                        </li>
-                    `)
-                .join("")}
+                ${toppingsHTML}
             </ul>
         `;
     }

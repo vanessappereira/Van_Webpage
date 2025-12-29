@@ -1,17 +1,14 @@
 /* =====================================================
    BAND NAME GENERATOR
 ===================================================== */
-
 document.addEventListener("DOMContentLoaded", () => {
     const form = document.getElementById("generateNameForm");
-
     form.addEventListener("submit", handleGenerateBandName);
 });
 
 /* =====================================================
    FUNÇÃO PRINCIPAL
 ===================================================== */
-
 function handleGenerateBandName(event) {
     event.preventDefault();
 
@@ -31,23 +28,22 @@ function handleGenerateBandName(event) {
 /* =====================================================
    FETCH
 ===================================================== */
-
 async function fetchBandData() {
     const response = await fetch("bandName.json");
+
     if (!response.ok) {
         throw new Error("Network response was not ok");
     }
-    return await response.json();
+
+    return response.json();
 }
 
 /* =====================================================
    LÓGICA
 ===================================================== */
-
 function generateBandName(data) {
     const randomAdj = getRandomItem(data.adj);
     const randomNoun = getRandomItem(data.noun);
-
     return `${randomAdj} ${randomNoun}`;
 }
 
@@ -58,7 +54,6 @@ function getRandomItem(array) {
 /* =====================================================
    UI / OUTPUT
 ===================================================== */
-
 function displayResult(bandName, container) {
     container.innerHTML = `
         <h2 class="titleName">Your band name is:</h2>
@@ -71,6 +66,7 @@ function displayResult(bandName, container) {
 
 function triggerAnimation(element) {
     element.classList.remove("show");
+
     setTimeout(() => {
         element.classList.add("show");
     }, 50);

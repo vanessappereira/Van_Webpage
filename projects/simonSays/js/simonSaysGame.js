@@ -87,12 +87,14 @@ function nextSequence() {
 
 function flashButton(color) {
     const button = document.getElementById(color);
-    button.classList.add("pressed");
+
+    button.classList.add("ring-active");
 
     setTimeout(() => {
-        button.classList.remove("pressed");
-    }, 200);
+        button.classList.remove("ring-active");
+    }, 250);
 }
+
 
 function animatePress(color) {
     const button = document.getElementById(color);

@@ -1,7 +1,6 @@
-/* =========================
+/* =====================================================
    WEATHER ICONS
-========================= */
-
+===================================================== */
 function getImagemPrecipitacao(precipitaProb) {
   const valor = parseFloat(precipitaProb);
 
@@ -11,38 +10,34 @@ function getImagemPrecipitacao(precipitaProb) {
   return "chuva.png";
 }
 
-/* =========================
+/* =====================================================
    HTML GENERATOR
-========================= */
-
+===================================================== */
 async function generateWeatherHTML(weatherData, districtName) {
   let html = `<h3 class="previsao-titulo">Distrito de ${districtName}</h3>`;
 
   for (const item of weatherData) {
-    const imageSrc = await getImagemPrecipitacao(item.precipitaProb);
+    const imageSrc = getImagemPrecipitacao(item.precipitaProb);
 
     html += `
-      <div class="weather-row">
-        <img src="images/weather/${imageSrc}" height="45" alt="Tempo">
-        <div class="weather-text">
-          <strong>Mín:</strong> ${item.tMin}°C<br>
-          <strong>Máx:</strong> ${item.tMax}°C
-        </div>
-      </div>
-    `;
+            <div class="weather-row">
+                <img src="images/weather/${imageSrc}" height="45" alt="Tempo">
+                <div class="weather-text">
+                    <strong>Mín:</strong> ${item.tMin}°C<br>
+                    <strong>Máx:</strong> ${item.tMax}°C
+                </div>
+            </div>
+        `;
   }
 
   return html;
 }
 
-/* =========================
+/* =====================================================
    IPMA FETCHES
-========================= */
-
+===================================================== */
 async function fetchDistrictData() {
-  const response = await fetch(
-    "https://api.ipma.pt/open-data/distrits-islands.json"
-  );
+  const response = await fetch("https://api.ipma.pt/open-data/distrits-islands.json");
 
   if (!response.ok) {
     throw new Error("Erro a obter distritos IPMA");
@@ -53,8 +48,7 @@ async function fetchDistrictData() {
 }
 
 async function fetchWeatherData(globalIdLocal) {
-  const forecastToday = 0;
-  const url = `https://api.ipma.pt/open-data/forecast/meteorology/cities/daily/hp-daily-forecast-day${forecastToday}.json`;
+  const url = "https://api.ipma.pt/open-data/forecast/meteorology/cities/daily/hp-daily-forecast-day0.json";
 
   const response = await fetch(url);
 
@@ -63,15 +57,12 @@ async function fetchWeatherData(globalIdLocal) {
   }
 
   const data = await response.json();
-  return data.data.filter(
-    item => item.globalIdLocal === globalIdLocal
-  );
+  return data.data.filter(item => item.globalIdLocal === globalIdLocal);
 }
 
-/* =========================
+/* =====================================================
    MAIN CONTROLLER
-========================= */
-
+===================================================== */
 async function obterMeteoDiaria(distritosPretendidos) {
   try {
     const districts = await fetchDistrictData();
@@ -80,10 +71,7 @@ async function obterMeteoDiaria(distritosPretendidos) {
     weatherContainer.innerHTML = "";
 
     for (const distritoNome of distritosPretendidos) {
-      const distrito = districts.find(
-        d => d.local === distritoNome
-      );
-
+      const distrito = districts.find(d => d.local === distritoNome);
       if (!distrito) continue;
 
       const weatherData = await fetchWeatherData(distrito.globalIdLocal);
@@ -99,6 +87,9 @@ async function obterMeteoDiaria(distritosPretendidos) {
   }
 }
 
+/* =====================================================
+   INIT
+===================================================== */
 document.addEventListener("DOMContentLoaded", () => {
   obterMeteoDiaria(["Guarda", "Castelo Branco", "Lisboa"]);
 });

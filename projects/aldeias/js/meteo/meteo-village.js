@@ -1,87 +1,83 @@
-async function getImagemPrecipitacao(precipitaProb) {
-  // Convert into double
-  const doublePrecipitacao = parseFloat(precipitaProb);
+/* =====================================================
+   WEATHER ICONS
+===================================================== */
+function getImagemPrecipitacao(precipitaProb) {
+  const valor = parseFloat(precipitaProb);
 
-  if (doublePrecipitacao === 0) {
-    return "sol.png";
-  } else if (doublePrecipitacao <= 30) {
-    return "nublado.png";
-  } else if (doublePrecipitacao <= 70) {
-    return "aguaceiros.png";
-  } else {
-    return "chuva.png";
-  }
+  if (valor === 0) return "sol.png";
+  if (valor <= 30) return "nublado.png";
+  if (valor <= 70) return "aguaceiros.png";
+  return "chuva.png";
 }
 
+/* =====================================================
+   FETCH METEOROLOGIA POR DISTRITO
+===================================================== */
 async function fetchMeteorologia(districtId, districtName) {
   const apiURL = `https://api.ipma.pt/open-data/forecast/meteorology/cities/daily/${districtId}.json`;
   const response = await fetch(apiURL);
   const dataForecast = await response.json();
 
-  let meteoHTML = '<table class="table">';
+  let meteoHTML = `<h4 class="previsao-titulo">Distrito de ${districtName}</h4>`;
+  meteoHTML += `<table class="table">`;
+
   for (const item of dataForecast.data) {
-    const imageSrc = await getImagemPrecipitacao(item.precipitaProb);
+    const imageSrc = getImagemPrecipitacao(item.precipitaProb);
 
     meteoHTML += `
-        <tr>
-            <td>Data:<br>${item.forecastDate}</td>
-            <td><img src="../../images/weather/${imageSrc}" height="45" alt="Weather Image"></td>
-            <td>Min Temperatura:<br>${item.tMin}°C</td>
-            <td>Max Temperatura:<br>${item.tMax}°C</td>
-        </tr>`;
+            <tr>
+                <td>Data:<br>${item.forecastDate}</td>
+                <td><img src="../../images/weather/${imageSrc}" height="45" alt="Weather Image"></td>
+                <td>Min Temperatura:<br>${item.tMin}°C</td>
+                <td>Max Temperatura:<br>${item.tMax}°C</td>
+            </tr>
+        `;
   }
-  meteoHTML += "</table>";
-  document.getElementById(
-    "previsao"
-  ).innerHTML += `<h4 class="previsao-titulo">Distrito de ${districtName}</h4>${meteoHTML}`;
+
+  meteoHTML += `</table>`;
+  document.getElementById("previsao").innerHTML += meteoHTML;
 }
 
+/* =====================================================
+   MAIN CONTROLLER
+===================================================== */
 async function obterPrevisao() {
   const url = "https://api.ipma.pt/open-data/distrits-islands.json";
 
   try {
     const response = await fetch(url);
-
-    // Check if the response is okay (status in the range 200-299)
-    if (!response.ok) {
-      throw new Error(`HTTP error! status: ${response.status}`);
-    }
+    if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
 
     const dataAPI = await response.json();
-    const dataLocalDistrict = dataAPI.data;
+    const distritos = dataAPI.data;
 
     const titleId = document.getElementById("title").textContent;
-
-    /* Almeida, Castelo Rodrigo, Linhares da Beira e Marialva pertencem ao distrito da Guarda;
-     * Monsanto pertence ao distrito de Castelo Branco. */
     let forecast;
 
-    if (
-      ["Almeida", "Castelo Rodrigo", "Linhares da Beira", "Marialva"].includes(
-        titleId
-      )
-    ) {
-      forecast = dataLocalDistrict.find(
-        (district) => district.local === "Guarda"
-      );
+    /* Mapeamento das aldeias → distrito */
+    const aldeiasGuarda = ["Almeida", "Castelo Rodrigo", "Linhares da Beira", "Marialva"];
+
+    if (aldeiasGuarda.includes(titleId)) {
+      forecast = distritos.find(d => d.local === "Guarda");
     } else if (titleId === "Monsanto") {
-      forecast = dataLocalDistrict.find(
-        (district) => district.local === "Castelo Branco"
-      );
+      forecast = distritos.find(d => d.local === "Castelo Branco");
     }
 
     if (forecast) {
-      const selectedValue = forecast.local;
-      const idValue = forecast.globalIdLocal;
-      await fetchMeteorologia(idValue, selectedValue);
+      await fetchMeteorologia(forecast.globalIdLocal, forecast.local);
     } else {
       document.getElementById("previsao").innerHTML +=
-        '<p class="text-danger">Local não encontrado.</p>';
+        `<p class="text-danger">Local não encontrado.</p>`;
     }
+
   } catch (error) {
-    console.log(error);
+    console.error(error);
     document.getElementById("previsao").innerHTML +=
-      '<p class="text-danger">Erro a encontrar meteorologia!</p>';
+      `<p class="text-danger">Erro a encontrar meteorologia!</p>`;
   }
 }
+
+/* =====================================================
+   INIT
+===================================================== */
 document.addEventListener("DOMContentLoaded", obterPrevisao);

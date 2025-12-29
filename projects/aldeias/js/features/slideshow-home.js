@@ -3,7 +3,6 @@
 ===================================================== */
 
 /* ---------- DADOS DO SLIDESHOW ---------- */
-
 const SLIDESHOW_DATA = [
   {
     title: "Almeida",
@@ -43,47 +42,47 @@ const SLIDESHOW_DATA = [
 ];
 
 /* ---------- ESTADO ---------- */
-
 let slideIndex = 1;
 const SLIDE_INTERVAL = 5000;
 
-/* ---------- INICIALIZAÇÃO ---------- */
-
+/* =====================================================
+   INICIALIZAÇÃO
+===================================================== */
 document.addEventListener("DOMContentLoaded", () => {
   const container = document.querySelector(".slideshow-container");
-
   if (!container) return;
 
-  // Criar slides dinamicamente
+  /* Criar slides dinamicamente */
   SLIDESHOW_DATA.forEach(item => {
     const slide = document.createElement("div");
     slide.className = "aldeiaSlides";
 
     slide.innerHTML = `
-      <div class="slideshow-caption">
-        <h3>${item.title}</h3>
-        <p>${item.text}</p>
-      </div>
+            <div class="slideshow-caption">
+                <h3>${item.title}</h3>
+                <p>${item.text}</p>
+            </div>
 
-      <div class="slide-frame">
-        <a href="${item.link}">
-          <img src="${item.image}" alt="${item.alt}">
-        </a>
-      </div>
-    `;
+            <div class="slide-frame">
+                <a href="${item.link}">
+                    <img src="${item.image}" alt="${item.alt}">
+                </a>
+            </div>
+        `;
 
     container.appendChild(slide);
   });
 
-  // Mostrar primeiro slide
+  /* Mostrar primeiro slide */
   showSlides(slideIndex);
 
-  // Auto-play
+  /* Auto-play */
   setInterval(() => plusSlides(1), SLIDE_INTERVAL);
 });
 
-/* ---------- CONTROLOS ---------- */
-
+/* =====================================================
+   CONTROLOS
+===================================================== */
 window.plusSlides = function (n) {
   showSlides(slideIndex += n);
 };
@@ -95,9 +94,9 @@ function showSlides(n) {
   if (n > slides.length) slideIndex = 1;
   if (n < 1) slideIndex = slides.length;
 
-  for (let i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
+  Array.from(slides).forEach(slide => {
+    slide.style.display = "none";
+  });
 
   slides[slideIndex - 1].style.display = "block";
 }

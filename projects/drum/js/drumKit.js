@@ -1,9 +1,7 @@
 /* =====================================================
    DRUM KIT – INTERAÇÃO E SOM
 ===================================================== */
-
 document.addEventListener("DOMContentLoaded", () => {
-
     const drumButtons = document.querySelectorAll(".drum");
 
     /* ===============================
@@ -20,20 +18,17 @@ document.addEventListener("DOMContentLoaded", () => {
     /* ===============================
        KEYBOARD EVENTS
     ================================ */
-    document.addEventListener("keydown", (event) => {
+    document.addEventListener("keydown", event => {
         const key = event.key.toLowerCase();
         playSound(key);
         animateButton(key);
     });
-
 });
 
 /* =====================================================
    SOUND CONTROLLER
 ===================================================== */
-
 function playSound(key) {
-
     const sounds = {
         w: "tom-1.mp3",
         a: "tom-2.mp3",
@@ -53,9 +48,7 @@ function playSound(key) {
 /* =====================================================
    BUTTON ANIMATION
 ===================================================== */
-
 function animateButton(key) {
-
     const activeButton = document.querySelector(`.${key}`);
     if (!activeButton) return;
 
