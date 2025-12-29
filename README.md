@@ -21,6 +21,7 @@ Recursos partilhados, como estilos globais, ícones e scripts comuns, encontram-
 │   ├── bandName/
 │   ├── dice/
 │   ├── drum/
+│   ├── recipesList/
 │   ├── simonSays/
 │   └── taco/
 ├── public/                 # Recursos globais reutilizáveis
