@@ -37,7 +37,7 @@ Cada projeto contém o seu próprio ficheiro README.md, descrevendo em detalhe a
 ## 📂 Tabela-Resumo dos Projetos Incluídos
 
 | Projeto | Descrição | Tecnologias | Documentação |
-|-------|-----------|-------------|---------------|
+| ------- | ----------- | ------------- | --------------- |
 | 🏰 Aldeias Históricas | Aplicação web informativa sobre as Aldeias Históricas de Portugal, com conteúdos multimédia e dados meteorológicos. | HTML5, CSS3, JavaScript, API IPMA | [README](projects/aldeias/README.md) |
 | 🎸 Band Name Generator | Gerador aleatório de nomes de bandas com base em dados JSON. | HTML5, CSS3, JavaScript, Fetch API, JSON | [README](projects/bandName/README.MD) |
 | 🎲 Dice Roller | Simulador de lançamento de dois dados com resultado automático. | HTML5, CSS3, JavaScript | [README](projects/dice/README.MD) |
