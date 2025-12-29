@@ -1,14 +1,23 @@
-/* CSS GLOBAL DO PORTFÓLIO */
+/* =====================================================
+   CSS GLOBAL DO PORTFÓLIO
+   Estrutura principal de imports
+===================================================== */
+
+/* =====================================================
+   BASE (Fundação do Projeto)
+===================================================== */
 @import url("../../../public/css/base/base.css");
 @import url("../../../public/css/components/titles.css");
-
-/* BASE */
 @import url("base/page-layout.css");
 
-/* COMPONENTES */
+/* =====================================================
+   COMPONENTES (Elementos Reutilizáveis)
+===================================================== */
 @import url("components/navbar-village.css");
 @import url("components/slideshow.css");
 
-/* PÁGINAS */
+/* =====================================================
+   PÁGINAS (Estilos Específicos)
+===================================================== */
 @import url("pages/home.css");
 @import url("pages/village.css");

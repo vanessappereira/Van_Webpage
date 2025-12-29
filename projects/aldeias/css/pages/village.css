@@ -1,7 +1,6 @@
 /* =====================================================
    HEADER DA ALDEIA
 ===================================================== */
-
 .village-header {
     grid-column: 1 / -1;
     text-align: center;
@@ -17,7 +16,6 @@
 /* =====================================================
    BOTÕES (TABS)
 ===================================================== */
-
 .village-buttons {
     display: flex;
     justify-content: center;
@@ -26,14 +24,16 @@
 }
 
 .village-buttons .button {
-    background: transparent;
     padding: 6px 16px;
     font-size: 15px;
-    border-radius: 10px;
     font-weight: 600;
 
+    background: transparent;
     color: var(--primary-color);
+
     border: 2px solid rgba(193, 163, 98, 0.4);
+    border-radius: 10px;
+
     transition: all 0.25s ease;
 }
 
@@ -49,7 +49,6 @@
 /* =====================================================
    TEXTO BASE
 ===================================================== */
-
 .about p,
 .history-text {
     font-size: 16px;
@@ -58,8 +57,7 @@
 }
 
 .history-text {
-    margin-bottom: 12px;
-    margin: auto 20px;
+    margin: auto 20px 12px;
 }
 
 .history-flex {
@@ -69,17 +67,16 @@
 }
 
 .history-text p {
-	margin-bottom: 16px;
+    margin-bottom: 16px;
 }
 
 .history-text p:last-child {
-	margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 /* =====================================================
    SOBRE – IMAGEM
 ===================================================== */
-
 .about-content {
     display: flex;
     flex-direction: column;
@@ -93,15 +90,14 @@
 }
 
 .image-wrapper img {
-    display: block;
     width: 100%;
+    display: block;
     border-radius: 14px;
 }
 
 /* =====================================================
    HISTÓRIA – TEXTO + IMAGENS (FLEXBOX)
 ===================================================== */
-
 .history-block {
     display: flex;
     align-items: center;
@@ -109,16 +105,12 @@
     padding: 16px 0;
 }
 
-/* inverter lado (imagem à direita) */
 .history-block.reverse {
     flex-direction: row-reverse;
 }
 
 .history-text {
     flex: 1;
-    font-size: 16px;
-    line-height: 1.7;
-    color: #1f2933;
 }
 
 .history-image {
@@ -129,57 +121,53 @@
 /* =====================================================
    VARIAÇÕES DE IMAGEM
 ===================================================== */
-
-/* ESQUERDA — CÍRCULO */
 .history-image.esquerda {
     width: 260px;
     height: 260px;
     clip-path: circle(50%);
 }
 
-/* DIREITA — ELIPSE */
 .history-image.direita {
     width: 260px;
     height: 260px;
     clip-path: ellipse(50% 45%);
 }
 
-/* POLÍGONO */
 .history-image.esquerda-poligono {
     width: 280px;
     height: 360px;
-
     clip-path: polygon(50% 0%, 85% 12%, 100% 40%, 82% 85%,
             50% 100%, 18% 85%, 0% 40%, 15% 12%);
 }
 
-
 /* =====================================================
    HISTÓRIA – IMAGEM DE FUNDO
 ===================================================== */
-
 .history-image-bg {
     min-height: 320px;
     padding: 28px;
-    border-radius: 22px;
     margin-top: 16px;
+
     background-size: cover;
     background-position: center;
+
+    border-radius: 22px;
 }
 
 .history-overlay {
-    background: rgba(248, 249, 251, 0.92);
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
-    border-radius: 16px;
-    padding: 24px;
     max-width: 720px;
     margin: auto;
+
+    padding: 24px;
+    border-radius: 16px;
+
+    background: rgba(248, 249, 251, 0.92);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
 }
 
 /* =====================================================
    HISTÓRIA – IMAGEM DE FUNDO (ALDEIAS)
 ===================================================== */
-
 .history-image-bg.almeida {
     background-image: url("../../pages/almeida/images/almeida5.jpg");
 }
@@ -201,7 +189,7 @@
 }
 
 /* =====================================================
-   O QUE VER
+   O QUE VER – GRID
 ===================================================== */
 .infos-grid {
     display: grid;
@@ -211,27 +199,27 @@
     align-items: stretch;
 }
 
-/* FIGURE BASE */
+/* FIGURE */
 .infos-grid figure {
-    background: #fff;
-    padding: 16px;
-    border-radius: 18px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
-
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     gap: 12px;
 
+    padding: 16px;
     text-align: center;
+
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
 }
 
 /* IMAGENS */
 .infos-grid img {
     width: 100%;
+    display: block;
     object-fit: cover;
     border-radius: 14px;
-    display: block;
 }
 
 /* LEGENDAS */
@@ -241,7 +229,7 @@
     color: #1f2933;
 }
 
-/* ESQUERDA – pequenas */
+/* PEQUENAS (ESQUERDA) */
 .infos-grid .small {
     grid-column: 1;
 }
@@ -250,7 +238,7 @@
     height: 300px;
 }
 
-/* DIREITA – grande */
+/* GRANDE (DIREITA) */
 .infos-grid .large {
     grid-column: 2;
     grid-row: 1 / span 2;
@@ -264,7 +252,6 @@
 /* =====================================================
    LINKS – ONDE FICAR / ONDE COMER
 ===================================================== */
-
 .links-grid {
     display: flex;
     flex-direction: column;
@@ -280,8 +267,8 @@
     padding: 14px;
     border-radius: 14px;
 
-    font-weight: 600;
     font-size: 16px;
+    font-weight: 600;
 
     color: var(--primary-color);
     background: rgba(193, 163, 98, 0.12);
@@ -301,7 +288,6 @@
 /* =====================================================
    PREVISÃO METEOROLÓGICA
 ===================================================== */
-
 #previsao {
     display: flex;
     flex-direction: column;
@@ -311,15 +297,15 @@
 
 #previsao h4,
 .previsao-titulo {
-    background: #eaf6ff;
-    color: #1a7ec8;
-
     padding: 10px 18px;
     border-radius: 999px;
 
     font-size: 20px;
     font-weight: 600;
     text-align: center;
+
+    background: #eaf6ff;
+    color: #1a7ec8;
 }
 
 #previsao table {
@@ -335,10 +321,9 @@
 /* =====================================================
    MAPA
 ===================================================== */
-
 #mapa iframe {
     width: 100%;
     height: 350px;
-    border-radius: 18px;
     border: none;
+    border-radius: 18px;
 }

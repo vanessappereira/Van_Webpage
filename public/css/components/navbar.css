@@ -1,80 +1,88 @@
-/* ===========================
+/* =====================================================
    NAVBAR CONTAINER
-=========================== */
-
+===================================================== */
 .navbar {
     position: sticky;
     top: 0;
     z-index: 50;
 
+    display: flex;
+    align-items: center;
+
+    min-height: 100px;
+    padding: 0;
+
     background-color: var(--secondary-color);
     backdrop-filter: blur(6px);
 
-    min-height: 100px;
     border-radius: 14px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-
-    display: flex;
-    align-items: center;
 }
 
+/* =====================================================
+   NAVBAR MENU (GRID)
+===================================================== */
 .navbar-menu {
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 0 24px;
-    font-size: 24px;
-
     display: grid;
     grid-template-columns: auto auto auto;
     align-items: center;
 
-    list-style: none;
+    max-width: 1400px;
     width: 100%;
+
+    margin: 0 auto;
+    padding: 0 24px;
+
+    list-style: none;
+    font-size: 24px;
 }
 
-/* ========= LEFT ========= */
-
+/* =====================================================
+   LEFT SECTION
+===================================================== */
 .navbar-left {
     display: flex;
     gap: 12px;
     justify-self: start;
 }
 
-/* ========= CENTER (CLOCK) ========= */
-
+/* =====================================================
+   CENTER (CLOCK)
+===================================================== */
 .clock {
-    font-family: 'Orbitron', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: "Orbitron", sans-serif;
     font-size: 36px;
     font-weight: 600;
     letter-spacing: 4px;
 
     color: var(--primary-color);
     white-space: nowrap;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
-
-/* ========= RIGHT ========= */
-
+/* =====================================================
+   RIGHT SECTION
+===================================================== */
 .navbar-right {
     display: flex;
     gap: 16px;
     justify-self: end;
 }
 
-/* ========= LINKS ========= */
-
+/* =====================================================
+   LINKS
+===================================================== */
 .navbar li {
     display: flex;
     align-items: center;
 }
 
 .navbar li a {
-    color: var(--white);
     padding: 14px 16px;
+    color: var(--white);
     text-decoration: none;
     border-radius: 20px;
 }
@@ -88,16 +96,18 @@
     outline-offset: 3px;
 }
 
-/* ========= BUTTONS ========= */
-
+/* =====================================================
+   BUTTONS (GITHUB / LINKEDIN)
+===================================================== */
 .github-btn,
 .linkedin-btn {
     display: inline-flex;
     align-items: center;
 }
 
-/* ========= ICONS ========= */
-
+/* =====================================================
+   ICONS
+===================================================== */
 .github-logo,
 .linkedin-logo {
     width: 32px;

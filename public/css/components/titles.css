@@ -1,5 +1,5 @@
 /* =====================================================
-   PAGE TITLE (GLOBAL) - H1
+   PAGE TITLE (GLOBAL) – H1
 ===================================================== */
 .page-title {
     font-family: var(--font-title);
@@ -8,10 +8,10 @@
     color: var(--primary-color);
 
     text-align: center;
-    margin: 2rem auto 2rem;
-    position: relative;
     width: fit-content;
+    margin: 2rem auto;
     padding-top: 0.5rem;
+    position: relative;
 }
 
 .page-title::after {
@@ -19,24 +19,26 @@
     display: block;
     width: 70%;
     height: 4px;
-    background-color: var(--highlight-color);
     margin: 0.5rem auto 0;
+
+    background-color: var(--highlight-color);
     border-radius: 2px;
 }
 
 /* =====================================================
-   PAGE TITLE (SUB-SECTION) - H2
+   SECTION TITLE – H2
 ===================================================== */
 .section-title {
     font-family: var(--font-title);
     font-size: 2.2rem;
     font-weight: 400;
     color: var(--primary-color);
-    padding-top: 15px;
+
     text-align: center;
-    margin: 0 auto 1.8rem;
-    position: relative;
     width: fit-content;
+    margin: 0 auto 1.8rem;
+    padding-top: 15px;
+    position: relative;
 }
 
 .section-title::after {
@@ -44,13 +46,14 @@
     display: block;
     width: 50%;
     height: 3px;
-    background-color: var(--highlight-color);
     margin: 0.4rem auto 0;
+
+    background-color: var(--highlight-color);
     border-radius: 2px;
 }
 
 /* =====================================================
-   CARD TITLE (SUB-SECTION) - H3
+   CARD TITLE – H3
 ===================================================== */
 .card-title {
     font-family: var(--font-base);
@@ -68,22 +71,28 @@
     display: block;
     width: 30px;
     height: 2px;
-    background-color: rgba(255, 255, 255, 0.6);
     margin: 0.3rem auto 0;
+
+    background-color: rgba(255, 255, 255, 0.6);
     border-radius: 1px;
 }
 
-/* Active Page */
+/* =====================================================
+   ACTIVE PAGE TAG
+===================================================== */
 .active {
     font-weight: 600;
     color: var(--primary-color);
+
     background-color: rgba(111, 66, 193, 0.12);
     /* roxo suave */
     padding: 6px 14px;
     border-radius: 999px;
 }
 
-/* ========= MOBILE ========= */
+/* =====================================================
+   RESPONSIVE
+===================================================== */
 @media (max-width: 768px) {
     .page-title {
         font-size: 2.2rem;

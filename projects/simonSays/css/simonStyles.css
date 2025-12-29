@@ -26,7 +26,7 @@
   transform: scale(0.96);
 }
 
-/* Colors */
+/* Button Colors */
 .red {
   background-color: red;
 }
@@ -46,14 +46,40 @@
 /* =====================================================
    GAME STATES
 ===================================================== */
-.pressed {
-  box-shadow: 0 0 20px white;
-  background-color: grey;
-}
-
 .game-over {
   background-color: red;
   opacity: 0.85;
+}
+
+/* =====================================================
+   PREMIUM LIGHT RING EFFECT
+===================================================== */
+
+.btn {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.15s ease;
+}
+
+/* Anel de luz interno */
+.btn::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 20%;
+  box-shadow: 0 0 25px currentColor inset;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+/* Ativado */
+.btn.ring-active::after {
+  opacity: 1;
+}
+
+/* Pequeno zoom para dar vida */
+.btn.ring-active {
+  transform: scale(1.05);
 }
 
 /* =====================================================

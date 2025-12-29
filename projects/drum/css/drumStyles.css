@@ -1,21 +1,23 @@
-/* ===============================
+/* =====================================================
    DRUM KIT – LAYOUT
-================================ */
-
+===================================================== */
 .set {
   margin: 8vh auto;
   text-align: center;
 }
 
-/* ===============================
+/* =====================================================
    DRUM BUTTON
-================================ */
-
+===================================================== */
 .drum {
-  outline: none;
-  border: 10px solid var(--border-color);
   width: 150px;
   height: 150px;
+  margin: 10px;
+
+  outline: none;
+  border: 10px solid var(--border-color);
+  border-radius: 15px;
+  cursor: pointer;
 
   font-family: var(--font-arvo);
   font-size: 5rem;
@@ -25,12 +27,7 @@
   color: var(--highlight-color);
   text-shadow: 3px 0 var(--primary-color);
 
-  border-radius: 15px;
-  margin: 10px;
-  cursor: pointer;
-
   background-color: white;
-
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -38,20 +35,18 @@
   transition: transform 0.1s ease, box-shadow 0.1s ease;
 }
 
-/* ===============================
+/* =====================================================
    PRESS ANIMATION
-================================ */
-
+===================================================== */
 .pressed {
   transform: scale(0.95);
   box-shadow: 0 3px 6px var(--primary-color);
   opacity: 0.6;
 }
 
-/* ===============================
+/* =====================================================
    DRUM IMAGES
-================================ */
-
+===================================================== */
 .w {
   background-image: url("../images/tom1.png");
 }

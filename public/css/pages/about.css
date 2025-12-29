@@ -1,7 +1,6 @@
-/* =========================
+/* =====================================================
    ABOUT SECTION
-========================= */
-
+===================================================== */
 .about {
     display: flex;
     flex-direction: column;
@@ -9,8 +8,9 @@
     width: 100%;
 }
 
-/* ---------- TABS ---------- */
-
+/* =====================================================
+   TABS
+===================================================== */
 .about-tabs {
     display: flex;
     gap: 12px;
@@ -19,8 +19,8 @@
 
 .about-tab {
     padding: 10px 22px;
-    border-radius: 999px;
     border: none;
+    border-radius: 999px;
     cursor: pointer;
 
     background: rgba(255, 255, 255, 0.6);
@@ -38,26 +38,28 @@
     box-shadow: 0 6px 18px rgba(127, 90, 240, 0.35);
 }
 
-/* ---------- CONTENT ---------- */
-
+/* =====================================================
+   CONTENT BOX
+===================================================== */
 .about-content {
-    background: rgba(255, 255, 255, 0.95);
-    border-radius: 20px;
-    padding: 40px;
-
     max-width: 900px;
     margin: 0 auto;
 
+    padding: 40px;
+    border-radius: 20px;
+
+    background: rgba(255, 255, 255, 0.95);
     text-align: left;
 }
 
 .about-content p {
-    line-height: 1.7;
     margin-bottom: 16px;
+    line-height: 1.7;
 }
 
-/* ---------- LISTAS ---------- */
-
+/* =====================================================
+   LISTS
+===================================================== */
 .about-content ul {
     padding-left: 22px;
     margin-top: 12px;
@@ -67,8 +69,9 @@
     margin-bottom: 8px;
 }
 
-/* ---------- EXPERIÊNCIA ---------- */
-
+/* =====================================================
+   EXPERIENCE
+===================================================== */
 .exp-item {
     margin-bottom: 32px;
 }
@@ -84,8 +87,9 @@
     margin-bottom: 10px;
 }
 
-/* ---------- COMPETÊNCIAS ---------- */
-
+/* =====================================================
+   SKILLS / LANGUAGES
+===================================================== */
 .container-languages {
     display: flex;
     gap: 60px;

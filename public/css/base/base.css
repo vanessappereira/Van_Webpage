@@ -1,10 +1,10 @@
 /* =====================================================
-   PAGE LAYOUT – BASE GLOBAL
-   Usado em TODAS as páginas
+   BASE GLOBAL – Usado em TODAS as páginas
 ===================================================== */
-/* =====================================================
-    ROOT VARIABLES
- ===================================================== */
+
+/* ===========================
+   ROOT VARIABLES
+=========================== */
 :root {
     --font-base: "Roboto", sans-serif;
 
@@ -21,10 +21,8 @@
 /* ===========================
    BODY E FUNDO
 =========================== */
-
 body {
     margin: 30px;
-
     font-family: var(--font-base);
     color: var(--text-color);
     text-align: center;
@@ -35,6 +33,9 @@ body {
     background-size: cover;
 }
 
+/* ===========================
+   CONTAINER PRINCIPAL
+=========================== */
 .page-container {
     margin: 28px 0;
     padding: 22px;
@@ -45,7 +46,9 @@ body {
         0 1px 0 rgba(255, 255, 255, 0.4) inset;
 }
 
-/* ========= FOOTER ========= */
+/* ===========================
+   FOOTER
+=========================== */
 footer {
     margin-top: 40px;
     padding: 16px 0;

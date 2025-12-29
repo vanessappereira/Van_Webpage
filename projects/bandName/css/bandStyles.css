@@ -1,7 +1,6 @@
 /* =====================================================
    BAND GENERATOR – LAYOUT
 ===================================================== */
-
 .band-generator {
     display: flex;
     flex-direction: column;
@@ -13,7 +12,6 @@
 /* =====================================================
    BUTTON
 ===================================================== */
-
 .button-band {
     padding: 14px 32px;
 
@@ -42,14 +40,15 @@
 /* =====================================================
    RESULT
 ===================================================== */
-
 .band-result {
     margin-top: 30px;
     text-align: center;
 
     opacity: 0;
     transform: translateY(10px);
-    transition: opacity 0.3s ease, transform 0.3s ease;
+    transition:
+        opacity 0.3s ease,
+        transform 0.3s ease;
 }
 
 .band-result.show {
@@ -60,7 +59,6 @@
 /* =====================================================
    TITLES
 ===================================================== */
-
 .titleName {
     margin-bottom: 12px;
 

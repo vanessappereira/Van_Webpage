@@ -1,19 +1,26 @@
 /* =====================================================
-   PROFILE FLIP
+   PROFILE FLIP CONTAINER
 ===================================================== */
 .profile-flip {
+    position: relative;
     margin: 30px;
+
     width: 275px;
     height: 275px;
-    position: relative;
+
     perspective: 800px;
+    display: flex;
     align-items: center;
 }
 
+/* =====================================================
+   INNER WRAPPER (3D ROTATION)
+===================================================== */
 .profile-inner {
+    position: relative;
     width: 100%;
     height: 100%;
-    position: relative;
+
     transform-style: preserve-3d;
     transform-origin: center;
     transition: transform 0.7s ease;
@@ -23,12 +30,17 @@
     transform: rotateY(180deg);
 }
 
+/* =====================================================
+   PROFILE IMAGES (FRONT & BACK)
+===================================================== */
 .profilePic {
     position: absolute;
     inset: 0;
+
     width: 100%;
     height: 100%;
     object-fit: cover;
+
     clip-path: ellipse();
     backface-visibility: hidden;
 }

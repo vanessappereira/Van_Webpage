@@ -1,7 +1,6 @@
 /* =====================================================
    INGREDIENT SELECT
 ===================================================== */
-
 .pick-ingredient {
     color: #e26e5c;
     font-size: 1.8rem;
@@ -10,7 +9,6 @@
 /* =====================================================
    BUTTONS
 ===================================================== */
-
 .buttons {
     display: flex;
     justify-content: center;
@@ -24,14 +22,13 @@
 
     width: 100px;
     height: 100px;
+    margin: 0 10px;
+    padding: 0;
 
     border: none;
     border-radius: 50%;
     background-color: white;
     cursor: pointer;
-
-    margin: 0 10px;
-    padding: 0;
 
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s, box-shadow 0.3s;
@@ -56,16 +53,16 @@
 /* =====================================================
    RECIPE DISPLAY
 ===================================================== */
-
 #recipeContainer {
-    background-color: white;
     margin-top: 40px;
     padding: 20px;
-    border-radius: 15px;
 
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    background-color: white;
+    border-radius: 15px;
 }
 
 #recipeTitle {
