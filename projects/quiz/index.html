@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <!-- BASE -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Vanessa Portfólio | Que personagem és tu? </title>
+
+    <!-- Icon -->
+    <link rel="icon" href="../../public/icons/butterfly.svg" type="image/svg+xml">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+    <!-- ========= NAVBAR ========= -->
+    <nav class="navbar">
+        <ul class="navbar-menu">
+            <!-- LEFT -->
+            <li class="navbar-left">
+                <a href="../../index.html">Home</a>
+                <a href="about.html">About Me</a>
+                <a href="mailto:v.pereira.work@gmail.com" class="contact">
+                    Contact Me
+                </a>
+            </li>
+
+            <!-- CENTER -->
+            <li id="MyClockDisplay" class="clock"></li>
+
+            <!-- RIGHT -->
+            <li class="navbar-right">
+                <a href="https://www.linkedin.com/in/vanessa-pereira/" class="linkedin-btn" target="_blank"
+                    rel="noopener">
+                    <img src="../../public/icons/linkedin-logo.svg" alt="LinkedIn" class="linkedin-logo">
+                    <span>LinkedIn</span>
+                </a>
+
+                <a href="https://github.com/vanessappereira" class="github-btn" target="_blank" rel="noopener">
+                    <img src="../../public/icons/github-logo.svg" alt="GitHub" class="github-logo">
+                    <span>GitHub</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- ========= CONTEÚDO PRINCIPAL ========= -->
+    <main class="page-container">
+        <h1 class="page-title">Que personagem és tu?</h1>
+
+        <!-- INTRO -->
+        <section id="quiz-start" class="quiz-section active">
+            <p class="quiz-intro"> Descobre qual personagem Oddbods ou Inside Out combina contigo! </p>
+            <button id="start-btn" class="quiz-btn">Começar Quiz</button>
+        </section>
+
+        <!-- PERGUNTAS -->
+        <section id="quiz-questions" class="quiz-section">
+            <div id="question-box">
+                <h2 id="question-text"></h2>
+                <div id="answers-container"></div>
+            </div>
+
+            <div class="quiz-progress">
+                <span id="progress-number"></span>
+            </div>
+        </section>
+
+        <!-- RESULTADO -->
+        <section id="quiz-result" class="quiz-section">
+            <div id="result-box"> <img id="result-image" alt="Resultado" class="result-image">
+                <h2 id="result-name"></h2>
+                <p id="result-description"></p>
+            </div>
+
+            <button id="restart-btn" class="quiz-btn">Refazer Quiz</button>
+            <button id="share-btn" class="quiz-btn">Partilhar Resultado</button>
+        </section>
+    </main>
+
+    <footer>
+        <p class="footer-content">&copy; 2025 Vanessa Pereira</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../../public/js/clock.js" charset="utf-8" defer></script>
+    <script type="module" src="js/quiz.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,448 @@
+/* =====================================================
+   IMPORTS
+===================================================== */
+
+@import url("../../../public/css/main.css");
+
+
+/* =====================================================
+   QUIZ — ESTILOS GERAIS
+===================================================== */
+
+.quiz-section {
+    display: none;
+    text-align: center;
+    padding: 20px;
+    animation: fadeIn 0.4s ease;
+}
+
+.quiz-section.active {
+    display: block;
+}
+
+.quiz-intro {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: greenyellow;
+}
+
+.quiz-btn {
+    background: #6a5acd;
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.quiz-btn:hover {
+    background: #5848c2;
+}
+
+
+/* =====================================================
+   PERGUNTAS
+===================================================== */
+
+#question-box {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#question-text {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+
+#answers-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.answer-btn {
+    background: #f0f0f0;
+    border: 2px solid transparent;
+    padding: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s ease;
+    font-size: 1rem;
+}
+
+.answer-btn:hover {
+    background: #e6e6ff;
+    border-color: #6a5acd;
+}
+
+
+/* =====================================================
+   PROGRESSO
+===================================================== */
+
+.quiz-progress {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: yellow;
+}
+
+
+/* =====================================================
+   RESULTADO
+===================================================== */
+
+#result-box {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.result-image {
+    width: 180px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+#result-name {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+
+#result-description {
+    font-size: 1.1rem;
+    color: greenyellow;
+}
+
+#share-btn {
+    background: #4caf50;
+}
+
+#share-btn:hover {
+    background: #449d48;
+}
+
+/* =====================================================
+   TEMAS DE PERSONAGEM (CORES)
+===================================================== */
+
+.result-theme {
+    --theme-color: #fff;
+    /* fallback */
+}
+
+.result-fuse {
+    --theme-color: #E53935;
+}
+
+.result-pogo {
+    --theme-color: #1E88E5;
+}
+
+.result-newt {
+    --theme-color: #EC407A;
+}
+
+.result-bubbles {
+    --theme-color: #FDD835;
+}
+
+.result-jeff {
+    --theme-color: #8E24AA;
+}
+
+.result-slick {
+    --theme-color: #FB8C00;
+}
+
+.result-zee {
+    --theme-color: #43A047;
+}
+
+.result-lulu {
+    --theme-color: #BA68C8;
+}
+
+.result-lisa {
+    --theme-color: #4FC3F7;
+}
+
+.result-modo {
+    --theme-color: #90A4AE;
+}
+
+.result-marv {
+    --theme-color: #3949AB;
+}
+
+/* Aplicação do tema */
+#result-box {
+    border: 12px solid var(--theme-color);
+    box-shadow: 0 0 20px var(--theme-color);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+
+/* =====================================================
+   ANIMAÇÕES
+===================================================== */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* =====================================================
+   ANIMAÇÕES PERSONALIZADAS POR PERSONAGEM
+===================================================== */
+
+/* Fuse — explosivo */
+@keyframes fuse-bounce {
+    0% {
+        transform: scale(1);
+    }
+
+    30% {
+        transform: scale(1.15);
+    }
+
+    60% {
+        transform: scale(0.9);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.result-fuse {
+    animation: fuse-bounce 0.6s ease;
+}
+
+/* Pogo — saltitante */
+@keyframes pogo-jump {
+    0% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.result-pogo {
+    animation: pogo-jump 0.5s ease;
+}
+
+/* Newt — brilho fofinho */
+@keyframes newt-glow {
+    0% {
+        box-shadow: 0 0 0 var(--theme-color);
+    }
+
+    100% {
+        box-shadow: 0 0 25px var(--theme-color);
+    }
+}
+
+.result-newt {
+    animation: newt-glow 0.8s ease forwards;
+}
+
+/* Bubbles — vibração energética */
+@keyframes bubbles-shake {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-4px);
+    }
+
+    75% {
+        transform: translateX(4px);
+    }
+}
+
+.result-bubbles {
+    animation: bubbles-shake 0.4s ease;
+}
+
+/* Jeff — fade organizado */
+@keyframes jeff-fade {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.result-jeff {
+    animation: jeff-fade 0.5s ease;
+}
+
+/* Slick — brilho estiloso */
+@keyframes slick-pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.result-slick {
+    animation: slick-pulse 0.6s ease;
+}
+
+/* Zee — slow fade chill */
+@keyframes zee-chill {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.result-zee {
+    animation: zee-chill 1s ease;
+}
+
+/* Lulu — flutuação suave */
+@keyframes lulu-float {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-6px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.result-lulu {
+    animation: lulu-float 1.2s ease infinite;
+}
+
+/* Lisa — brilho inteligente */
+@keyframes lisa-glow {
+    0% {
+        box-shadow: 0 0 0 var(--theme-color);
+    }
+
+    100% {
+        box-shadow: 0 0 20px var(--theme-color);
+    }
+}
+
+.result-lisa {
+    animation: lisa-glow 0.7s ease forwards;
+}
+
+/* Modo — fade lógico */
+@keyframes modo-logic {
+    0% {
+        transform: scale(0.95);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.result-modo {
+    animation: modo-logic 0.4s ease;
+}
+
+/* Marv — entrada heroica */
+@keyframes marv-hero {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.result-marv {
+    animation: marv-hero 0.5s ease-out;
+}
+
+/* =====================================================
+   RESPONSIVO — MOBILE FIRST
+===================================================== */
+
+@media (max-width: 600px) {
+    .quiz-section {
+        padding: 15px;
+    }
+
+    #question-box {
+        max-width: 100%;
+    }
+
+    #question-text {
+        font-size: 1.2rem;
+    }
+
+    .answer-btn {
+        font-size: 0.95rem;
+        padding: 10px;
+    }
+
+    .quiz-btn {
+        width: 100%;
+        padding: 14px;
+        font-size: 1.1rem;
+    }
+
+    #result-box {
+        padding: 15px;
+    }
+
+    .result-image {
+        width: 150px;
+    }
+
+    #result-name {
+        font-size: 1.4rem;
+    }
+
+    #result-description {
+        font-size: 1rem;
+    }
+}
