@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <!-- BASE -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Vanessa Portfólio | Lista de Receitas </title>
+
+    <!-- Icon -->
+    <link rel="icon" href="../../public/icons/butterfly.svg" type="image/svg+xml">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+    <!-- ========= NAVBAR ========= -->
+    <nav class="navbar">
+        <ul class="navbar-menu">
+            <!-- LEFT -->
+            <li class="navbar-left">
+                <a href="../../index.html">Home</a>
+                <a href="about.html">About Me</a>
+                <a href="mailto:v.pereira.work@gmail.com" class="contact">
+                    Contact Me
+                </a>
+            </li>
+
+            <!-- CENTER -->
+            <li id="MyClockDisplay" class="clock"></li>
+
+            <!-- RIGHT -->
+            <li class="navbar-right">
+                <a href="https://www.linkedin.com/in/vanessa-pereira/" class="linkedin-btn" target="_blank"
+                    rel="noopener">
+                    <img src="../../public/icons/linkedin-logo.svg" alt="LinkedIn" class="linkedin-logo">
+                    <span>LinkedIn</span>
+                </a>
+
+                <a href="https://github.com/vanessappereira" class="github-btn" target="_blank" rel="noopener">
+                    <img src="../../public/icons/github-logo.svg" alt="GitHub" class="github-logo">
+                    <span>GitHub</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- ========= CONTEÚDO PRINCIPAL ========= -->
+    <main class="page-container">
+        <h1 class="page-title">🍲 Livro de Receitas</h1>
+
+        <!-- FORMULÁRIO -->
+        <section class="recipe-form">
+            <h2>Adicionar Receita</h2>
+            <form id="addRecipeForm">
+
+                <!-- Nome da receita -->
+                <input type="text" id="title" placeholder="Nome da receita" required>
+
+                <!-- Ingredientes -->
+                <h3>Ingredientes</h3>
+                <div id="ingredientsList"></div>
+                <!-- Botão de adicionar ingrediente dentro da seção de ingredientes -->
+                <button type="button" id="addIngredient">+ Adicionar ingrediente</button>
+
+                <!-- Modo de preparação -->
+                <textarea id="instructions" placeholder="Modo de preparação" required></textarea>
+
+                <!-- Botão de salvar -->
+                <button type="submit" class="save-btn">Guardar Receita</button>
+            </form>
+        </section>
+
+        <!-- LISTA DE RECEITAS -->
+        <section class="recipes-list">
+            <div class="recipes-header">
+                <button id="exportJSON">Exportar Receitas para JSON</button>
+                <h2>Receitas Guardadas</h2>
+            </div>
+
+            <div id="recipesContainer"></div>
+        </section>
+    </main>
+
+    <!-- POP-UP -->
+    <div id="recipePopup" class="recipe-popup">
+        <span class="close-popup">&times;</span>
+        <div class="popup-content"></div>
+    </div>
+
+    <footer>
+        <p class="footer-content">&copy; 2025 Vanessa Pereira</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../../public/js/clock.js" charset="utf-8" defer></script>
+    <script src="js/recipes.js" defer></script>
+</body>
+
+</html>

@@ -1,0 +1,132 @@
+/* ================================
+   FORMULÁRIO DE RECEITA
+================================ */
+
+.recipe-form {
+    padding: 24px;
+    width: 100%;
+    max-width: 420px;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    box-sizing: border-box;
+    margin-bottom: 28px;
+}
+
+/* TÍTULOS */
+.recipe-form h2 {
+    margin-bottom: 18px;
+    font-size: 20px;
+    color: #333;
+}
+
+/* INPUT PRINCIPAL */
+#title {
+    width: 100%;
+    padding: 10px 14px;
+    font-size: 15px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+/* ================================
+   INGREDIENTES
+================================ */
+
+#ingredientsList {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 14px;
+}
+
+.ingredient-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.ingredient-row input[type="text"] {
+    width: 150px;
+    padding: 8px 10px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.ingredient-row input[type="number"] {
+    width: 70px;
+    padding: 8px;
+    font-size: 14px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.ingredient-row select {
+    width: 90px;
+    padding: 8px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.ingredient-row button {
+    border: none;
+    background: none;
+    font-size: 18px;
+    color: #c00;
+    cursor: pointer;
+}
+
+/* BOTÃO ADICIONAR INGREDIENTE */
+#addIngredient {
+    display: block;
+    margin: 0 auto 20px auto;
+    padding: 8px 14px;
+    border-radius: 10px;
+    border: 1px dashed #999;
+    background: transparent;
+    cursor: pointer;
+}
+
+/* TEXTAREA */
+#instructions {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    resize: vertical;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+/* BOTÃO GUARDAR */
+.save-btn {
+    display: block;
+    margin: 0 auto;
+    width: 180px;
+    padding: 12px;
+    border-radius: 14px;
+    border: none;
+    background: #1e88e5;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* ================================
+   RESPONSIVO
+================================ */
+
+@media (max-width: 600px) {
+    .recipe-form {
+        max-width: 100%;
+    }
+
+    .ingredient-row input[type="text"] {
+        width: 100%;
+    }
+}
