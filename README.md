@@ -45,4 +45,3 @@ Cada projeto contém o seu próprio ficheiro README.md, descrevendo em detalhe a
 | 🎮 Simon Says | Implementação do jogo Simon Says com progressão de níveis e feedback sonoro. | HTML5, CSS3, JavaScript | [README](projects/simonSays/README.MD) |
 | 🌮 Taco Town | Aplicação interativa de receitas baseada na seleção do utilizador e dados JSON. | HTML5, CSS3, JavaScript, JSON | [README](projects/taco/README.MD) |
 | 🍳 Lista de Receitas | Aplicação para criar, editar, eliminar e exportar receitas com ingredientes dinâmicos. | HTML5, CSS3, JavaScript, LocalStorage, JSON | [README](projects/recipesList/README.MD) |
-
